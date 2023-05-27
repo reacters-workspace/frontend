@@ -1,9 +1,10 @@
 // import { Button } from "react-bootstrap";
 import ButtonHero from "../Buttons/Button";
-import ExerciseCard from "../Cards/CardCategory";
-import ExerciseCard1 from "../Cards/CardExerciseGif";
+// import ExerciseCard from "../Cards/CardCategory";
+// import ExerciseCard1 from "../Cards/CardExerciseGif";
 import TeamMember from "../Cards/teamMember";
 import CategorySection from "../CategorySection/CategorySection";
+import Contact from "../Contact/Contact";
 export default function Main() {
   return (
     <>
@@ -29,6 +30,7 @@ export default function Main() {
                 <ExerciseCard /> */}
         <CategorySection />
         <TeamMember />
+        <Contact/>
       </div>
     </>
   );
