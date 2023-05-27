@@ -2,6 +2,7 @@
 import ButtonHero from "../Buttons/Button";
 import ExerciseCard from "../Cards/CardCategory";
 import ExerciseCard1 from "../Cards/CardExerciseGif";
+import Contact from "../Contact/Contact";
 
 export default function Main() {
     return (
@@ -16,6 +17,7 @@ export default function Main() {
                 <ExerciseCard1/>
                 <ExerciseCard/>
                 <ExerciseCard/>
+                <Contact />
 
                 
             </div>
