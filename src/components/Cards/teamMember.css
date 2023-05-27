@@ -24,3 +24,8 @@
 .card-text {
     text-align: center;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
