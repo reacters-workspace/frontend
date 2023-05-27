@@ -1,0 +1,26 @@
+.team-member-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-group {
+    display: flex;
+}
+
+.card {
+    width: 12rem;
+    margin: 0 0.5rem;
+}
+
+.card-body {
+    width: 10rem;
+
+}
+
+.card-text {
+    text-align: center;
+}
