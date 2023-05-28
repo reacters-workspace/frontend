@@ -1,20 +1,20 @@
-import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import './Button.css'
 
 function ButtonHero() {
   return (
-    <>
+    <div class='btn-container'>
 
 
       <Link to="/about">
-        <Button variant="secondary">Learn more</Button>{' '}
+        <button class='btn-learn-more font-s'  >Learn more</button>
       </Link>
       <Link to="/exercises">
-        <Button variant="secondary">Get started</Button>{' '}
+        <button class='btn-get-start font-s'>Get started</button>
       </Link>
 
 
-    </>
+    </div>
   );
 }
 

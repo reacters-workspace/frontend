@@ -1,0 +1,36 @@
+.btn-learn-more{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.btn-learn-more:hover{
+    color: #f13a11;
+}
+
+.btn-get-start{
+    background: transparent;
+    border:#f13a11 solid thin;
+    color:#f13a11;
+    text-transform: uppercase;
+    
+
+}
+
+.btn-get-start:hover{
+    background-color: white;
+    border: white;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.font-s{
+    padding: 14px 24px;
+    font-size: 15px;
+    margin-top: 10px;
+}

@@ -10,7 +10,7 @@ const CategorySection = () => {
   const [fixedCard, setfixedCard] = useState([]);
 
   function fetchData() {
-    axios.get(`http://localhost:3009/get-categories-db`).then((result) => {
+    axios.get(`https://reacters-fitness.onrender.com/get-categories-db`).then((result) => {
       const categoryDB = result.data.data;
 
       setfixedCard(categoryDB);
