@@ -5,6 +5,7 @@ import Logo from '../../assets/Logo/ezgif-3-8c16a90147-removebg-preview.png'
 function NavBar({ onCategoryPage = false, onExercisePage = false }) {
     return (
         <div className='h-20'>
+
         <Navbar bg="dark" variant="light">
                 <Container>
                     <Navbar.Brand href="/"> <img style={{ width: '100px' }} src={Logo} alt="Logo" />
@@ -39,6 +40,8 @@ function NavBar({ onCategoryPage = false, onExercisePage = false }) {
                 </Container>
             </Navbar>
             </div>
+
+
     );
 }
 

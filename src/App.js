@@ -1,3 +1,4 @@
+
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -10,9 +11,12 @@ import NavBar from "./components/Navbar/Navbar";
 import ExercisePage from "./components/ExercisePage/ExercisePage";
 
 
+
+
 function App() {
   return (
     <div className="App">
+
       <Routes>
         <Route path="/" element={<NavBar onCategoryPage={false} />} />
         <Route path="/categories" element={<NavBar onCategoryPage={true} />} />
@@ -29,6 +33,7 @@ function App() {
 
 
       <Footer />
+
     </div>
   );
 }
