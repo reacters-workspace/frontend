@@ -30,7 +30,7 @@ export default function Main() {
                 <ExerciseCard /> */}
         <CategorySection />
         <TeamMember />
-        <Contact/>
+        <Contact />
       </div>
     </>
   );

@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 function ButtonHero() {
   return (
     <>
-      
-      
+
+
       <Link to="/about">
-      <Button variant="secondary">Learn more</Button>{' '}
+        <Button variant="secondary">Learn more</Button>{' '}
       </Link>
       <Link to="/exercises">
-      <Button variant="secondary">Get started</Button>{' '}
+        <Button variant="secondary">Get started</Button>{' '}
       </Link>
-      
-      
+
+
     </>
   );
 }

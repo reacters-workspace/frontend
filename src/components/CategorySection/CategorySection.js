@@ -1,10 +1,26 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
+
 import ExerciseCard from "../Cards/CardCategory";
 // import ExerciseCard1 from "../Cards/CardExerciseGif";
 import { Button, Row } from "react-bootstrap";
 import "./CategorySection.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 const CategorySection = () => {
+  const [fixedCard, setfixedCard] = useState([]);
+
+  function fetchData() {
+    axios.get(`http://localhost:3009/get-categories-db`).then((result) => {
+      const categoryDB = result.data.data;
+
+      setfixedCard(categoryDB);
+    });
+  }
+  const arrayOFThree = fixedCard.filter(result => result.id >= 7);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <Fragment>
       <p className="main-para">Get a Perfect Body</p>
@@ -12,11 +28,10 @@ const CategorySection = () => {
         <h2>Our Exercises</h2>
         <div className="cat-section">
           <Row>
-            <ExerciseCard />
-            {/* <ExerciseCard1 /> */}
-            <ExerciseCard />
-            <ExerciseCard />
-            <ExerciseCard />
+
+            {
+              arrayOFThree.map(item => <ExerciseCard fixedCard={item} key={item.id} />)
+            }
           </Row>
           <Link to="/categories">
             <Button className="button">
