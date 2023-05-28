@@ -24,25 +24,6 @@ export default function Hero() {
 
         </>
     );
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -5,15 +5,20 @@ import Hero from "../Hero/Hero";
 export default function Main() {
   return (
     <>
+
+      <div>
       <Hero/>
-       
+
         {/* <ExerciseCard />
                 <ExerciseCard1 />
                 <ExerciseCard />
                 <ExerciseCard /> */}
         <CategorySection />
         <TeamMember />
-        <Contact/>
+
+        <Contact />
+      </div>
+
     </>
   );
 }
