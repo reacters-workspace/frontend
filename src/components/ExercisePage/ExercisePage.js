@@ -20,6 +20,7 @@ export default function ExercisePage({ withDynamic }) {
       .then((result) => {
         const exerciseDB = result.data.results;
 
+
         setExerciseData(exerciseDB);
       });
   }
@@ -62,4 +63,5 @@ export default function ExercisePage({ withDynamic }) {
       />
     </>
   );
+
 }

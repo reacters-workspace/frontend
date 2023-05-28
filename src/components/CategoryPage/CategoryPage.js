@@ -7,11 +7,14 @@ export default function CategoryPage() {
   const [categoryData, setCategoryData] = useState([]);
   // const [categoryName,setcategoryName]=useState([])
 
+
+
   function fetchData() {
     axios
       .get(`https://reacters-fitness.onrender.com/get-categories-db`)
       .then((result) => {
         const categoryDB = result.data.data;
+
 
         setCategoryData(categoryDB);
       });
