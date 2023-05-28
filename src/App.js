@@ -1,16 +1,15 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
+import NavBar from './components/Navbar/Navbar';
 
 
 function App() {
   return (
     <div className="App">
      
-      <Header/>
+      <NavBar/>
       <Main/>
       <Footer/>
     </div>
