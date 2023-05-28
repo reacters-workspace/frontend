@@ -52,9 +52,9 @@ h2 {
   margin: 20px;
 }
 
-.card img {
+/* .card img {
   width: 100%;
-}
+} */
 
 .card img:hover {
   transition: 0.3 ease-in-out;
