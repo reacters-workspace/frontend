@@ -1,0 +1,35 @@
+.modal-content {
+    width: 550px;
+    margin: 0 auto;
+
+}
+
+.title {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.body {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
