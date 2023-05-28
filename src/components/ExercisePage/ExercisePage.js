@@ -4,6 +4,7 @@ import ExerciseCard1 from "../Cards/CardExerciseGif";
 import { Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ModalExercise from "../ModalExercise/ModalExercise";
+import "./ExercisePage.css";
 
 export default function ExercisePage({ withDynamic }) {
   const [show, setShow] = useState(false);
@@ -21,6 +22,7 @@ export default function ExercisePage({ withDynamic }) {
         const exerciseDB = result.data.results;
 
 
+
         setExerciseData(exerciseDB);
       });
   }
@@ -28,8 +30,8 @@ export default function ExercisePage({ withDynamic }) {
     fetchData();
   }, []);
   return (
-    <>
-      <Row>
+     <div >
+      <Row className="ExercisePage">
         {exerciseData.map((item) => {
           if (withDynamic === false) {
             if (exerciseData.indexOf(item) <= 300) {
@@ -61,7 +63,8 @@ export default function ExercisePage({ withDynamic }) {
         handleClose={handleClose}
         singleExercise={singleExercise}
       />
-    </>
+    </div>
   );
+
 
 }
