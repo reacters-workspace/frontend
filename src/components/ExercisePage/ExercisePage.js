@@ -4,6 +4,7 @@ import ExerciseCard1 from "../Cards/CardExerciseGif";
 import { Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ModalExercise from "../ModalExercise/ModalExercise";
+import "./ExercisePage.css";
 
 export default function ExercisePage({ withDynamic }) {
 
@@ -16,7 +17,7 @@ export default function ExercisePage({ withDynamic }) {
 
     const [exerciseData, setExerciseData] = useState([])
     function fetchData() {
-        axios.get(`http://localhost:3009/exercises`).then(result => {
+        axios.get(`https://reacters-fitness.onrender.com/exercises`).then(result => {
             const exerciseDB = result.data.results;
 
             setExerciseData(exerciseDB)
@@ -26,8 +27,8 @@ export default function ExercisePage({ withDynamic }) {
         fetchData()
     }, [])
     return (
-        <>
-            <Row>
+        <div >
+            <Row className="ExercisePage">
                 {exerciseData.map(item => {
 
                     if (withDynamic === false) {
@@ -48,7 +49,7 @@ export default function ExercisePage({ withDynamic }) {
                 })}
             </Row>
             <ModalExercise show={show} handleClose={handleClose} singleExercise={singleExercise} />
-        </>
+            </div>
     )
 }
 
