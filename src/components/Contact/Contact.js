@@ -1,12 +1,39 @@
-import Form from "react-bootstrap/Form";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button } from "react-bootstrap";
+
+import Form from 'react-bootstrap/Form';
+import './Contact.css'
+import axios from 'axios';
+
 function Contact() {
+  
+  const handleSubmit = () => {
+
+    const data = {
+      
+    };
+    
+    fetch('https://reacters-fitness.onrender.com/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        console.log('Movie added to favorites:', result);
+
+      })
+      .catch((error) => {
+        console.error('Error adding movie to favorites:', error);
+        // Handle error or display an error message to the user
+      });
+  };   
   return (
     <>
-      <Form>
+      <Form class='contact-form'>
         <h2>Feel free to ask anything</h2>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+
           <Form.Control
             className="mb-3 w-50 mx-auto d-block"
             type="text"
@@ -23,13 +50,10 @@ function Contact() {
             rows={3}
             placeholder="Message"
           />
-          <Button
-            variant="light"
-            type="submit"
-            className="w-50 btn-outline-dark"
-          >
-            Send Message
-          </Button>
+           <button class="contact-btn" type="submit" onClick={handleSubmit}>Send Message</button>
+          
+           
+          
         </Form.Group>
       </Form>
       {/* <div className="mb-3">
@@ -47,6 +71,7 @@ function Contact() {
         +962 7x xxx xxxx
       </div> */}
     </>
+
   );
 }
 

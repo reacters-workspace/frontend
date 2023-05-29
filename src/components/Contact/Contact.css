@@ -1,0 +1,19 @@
+.contact-btn{
+    background-color: black;
+    width: 40%;
+    color: white;
+    height: 50px;
+    border: none;
+}
+
+.contact-btn:hover{
+    background-color:#f13a11 ;
+}
+
+.contact-form {
+    padding: 10px;
+}
+
+.w-40{
+    width: 40%;
+}

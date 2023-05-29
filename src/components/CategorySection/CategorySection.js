@@ -11,6 +11,7 @@ const CategorySection = () => {
 
   function fetchData() {
 
+
     axios
       .get(`https://reacters-fitness.onrender.com/get-categories-db`)
       .then((result) => {

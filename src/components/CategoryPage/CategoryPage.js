@@ -10,6 +10,7 @@ export default function CategoryPage() {
 
 
 
+
   function fetchData() {
     axios
       .get(`https://reacters-fitness.onrender.com/get-categories-db`)

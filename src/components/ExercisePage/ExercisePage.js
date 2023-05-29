@@ -23,6 +23,7 @@ export default function ExercisePage({ withDynamic }) {
 
 
 
+
         setExerciseData(exerciseDB);
       });
   }
@@ -65,6 +66,7 @@ export default function ExercisePage({ withDynamic }) {
       />
     </div>
   );
+
 
 
 }
