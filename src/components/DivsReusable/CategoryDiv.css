@@ -17,7 +17,7 @@
   text-decoration: none;
   text-align: center;
   /* padding: 10px; */
-  box-shadow: 5px 10px 18px lightgray;
+  /* box-shadow: 5px 10px 18px lightgray; */
 }
 .clickable:hover {
   text-decoration: none;
@@ -40,42 +40,37 @@
   transition: 0.3s ease-in-out;
 }
 
-.cate-parent-div{
-    margin-top:50px ;
-    margin-bottom:20px ;
-    width:100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    
-
+.cate-parent-div {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.cate-div-paragraph{
-   
-    width: 650px;;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: "Crimson Text", serif;
-    font-family: "Philosopher", sans-serif;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.5;
-    color: black;
-    font-weight: 600;
-    background-color: #EEEEEE;
-    border-radius: 8px;
-    padding: 10px 30px;
-    
+.cate-div-paragraph {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Crimson Text", serif;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: black;
+  font-weight: 600;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 10px 30px;
 }
-
 
 .button1 {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .button1:hover {
-    text-decoration: none;
-    color: #F13A11;
+  text-decoration: none;
+  color: #f13a11;
 }

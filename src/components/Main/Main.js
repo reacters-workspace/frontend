@@ -6,7 +6,6 @@ import OurServices from "../OurServices/OurServices";
 export default function Main() {
   return (
     <>
-
       <div>
         <Hero />
 
@@ -16,9 +15,7 @@ export default function Main() {
                 <ExerciseCard /> */}
         <CategorySection />
         <OurServices />
-
       </div>
-
     </>
   );
 }
