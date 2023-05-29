@@ -24,12 +24,12 @@ export default function CategoryPage() {
     fetchData();
   }, []);
   return (
-    <>
+    <div className="cate-page">
       {categoryData.map((element) => (
-        <Link key={element.id} to={`/exercises/${element.category}`}>
+        
           <CategoryDiv categoryName={element} key={element.id} />
-        </Link>
+        
       ))}
-    </>
+    </div>
   );
 }
