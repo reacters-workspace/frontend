@@ -1,6 +1,7 @@
 .allCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
+
   /* height: 700px; */
 }
 
@@ -9,6 +10,7 @@
   transform: translateY(-0.5rem);
   box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
 }
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -31,11 +33,17 @@
   text-transform: capitalize;
   width: 120%;
 }
+
 .show-btn {
   margin-top: 20px;
   align-items: baseline;
   /* margin-bottom: 20px; */
 }
+
 .show-btn:hover {
-  background-color: #f13a11;
+
+
+  background-color: #F13A11;
+
 }
+
