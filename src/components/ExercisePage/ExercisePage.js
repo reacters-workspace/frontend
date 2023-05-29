@@ -29,9 +29,10 @@ export default function ExercisePage({ withDynamic }) {
     fetchData();
   }, []);
   return (
-
-    <div >
-      <div className="header-in-exercises"><h2>{bodypart}</h2></div>
+    <div className="exercises-div">
+      <div className="header-in-exercises">
+        <h2>{bodypart}</h2>
+      </div>
 
       <div>
         <Row className="ExercisePage">

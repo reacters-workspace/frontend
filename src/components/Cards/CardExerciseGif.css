@@ -2,7 +2,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 
-
   /* height: 700px; */
 }
 
@@ -25,7 +24,6 @@
 }
 
 .title1 {
-
   font-size: 17px;
   /* font-family: "Times New Roman", Times, serif; */
   /* padding-top: 20px; */
@@ -40,11 +38,12 @@
   margin-top: 20px;
   align-items: baseline;
   /* margin-bottom: 20px; */
-
 }
 
 .show-btn:hover {
 
+
   background-color: #F13A11;
 
 }
+
