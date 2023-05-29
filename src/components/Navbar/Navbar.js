@@ -4,13 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/Logo/ezgif-3-8c16a90147-removebg-preview.png'
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 function NavBar({ onCategoryPage = false, onExercisePage = false }) {
     return (
         <Navbar className="navbar fixed-top">
             <Container>
                 <div>
-                    <Navbar.Brand href="/" class="nav-link"> <img style={{ width: '65px' }} src={Logo} alt="Logo" /></Navbar.Brand>
-                    <Navbar.Text class='logo-text'>Reacter Fitness</Navbar.Text>
+                    <Navbar.Brand href="/" class="nav-link"> <img className='logo-hover' style={{ width: '65px' }} src={Logo} alt="Logo" /></Navbar.Brand>
+                    <Link className='nav-link-style' to={`/`}><Navbar.Text class='logo-text'>Reacter Fitness</Navbar.Text></Link>
                 </div>
                 <Nav class="nav-links">
                     {<>
