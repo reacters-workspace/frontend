@@ -1,25 +1,38 @@
-.allCard{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.allCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* height: 700px; */
 }
 
-.allCard:hover{
+.allCard:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
 }
-
-.image1{
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image1 {
   border: none;
   width: 100%;
-  border-bottom: solid lightgray ;
+  border-bottom: solid lightgray;
 }
 
-.title1{
-    font-size: 16px;
-    font-family:'Times New Roman', Times, serif;
-    text-transform: capitalize;
+.title1 {
+  font-size: 17px;
+  /* font-family: "Times New Roman", Times, serif; */
+  /* padding-top: 20px; */
+  font-family: "Crimson Text", serif;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  width: 120%;
 }
-
+.show-btn {
+  margin-top: 20px;
+  align-items: baseline;
+  /* margin-bottom: 20px; */
+}
 .show-btn:hover {
-  background-color:#F13A11; 
-
-} 
+  background-color: #f13a11;
+}
