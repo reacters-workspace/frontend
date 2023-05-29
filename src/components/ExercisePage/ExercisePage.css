@@ -1,5 +1,9 @@
-.ExercisePage{
-  margin-top: 65px;
+.ExercisePage {
+  margin-top: 40px;
   gap: 20px;
   justify-content: center;
+}
+
+.header-in-exercises {
+  margin-top: 70px;
 }

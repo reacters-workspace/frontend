@@ -11,6 +11,8 @@ export default function ExercisePage({ withDynamic }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [singleExercise, setsingleExercise] = useState({});
+  const [header, setheader] = useState("");
+
 
   const { bodypart } = useParams();
 
@@ -31,34 +33,38 @@ export default function ExercisePage({ withDynamic }) {
     fetchData();
   }, []);
   return (
-     <div >
-      <Row className="ExercisePage">
-        {exerciseData.map((item) => {
-          if (withDynamic === false) {
-            if (exerciseData.indexOf(item) <= 300) {
-              return (
-                <ExerciseCard1
-                  key={item.id}
-                  exerciseData={item}
-                  handleShow={handleShow}
-                  setExerciseData={setsingleExercise}
-                />
-              );
+    <div >
+      <div className="header-in-exercises"><h2>Name</h2></div>
+      <div>
+        <Row className="ExercisePage">
+          {exerciseData.map((item) => {
+
+            if (withDynamic === false) {
+              if (exerciseData.indexOf(item) <= 300) {
+                return (
+                  <ExerciseCard1
+                    key={item.id}
+                    exerciseData={item}
+                    handleShow={handleShow}
+                    setExerciseData={setsingleExercise}
+                  />
+                );
+              }
+            } else if (exerciseData.indexOf(item) <= 300) {
+              if (item.bodyPart === bodypart) {
+                return (
+                  <ExerciseCard1
+                    key={item.id}
+                    exerciseData={item}
+                    handleShow={handleShow}
+                    setExerciseData={setsingleExercise}
+                  />
+                );
+              }
             }
-          } else if (exerciseData.indexOf(item) <= 300) {
-            if (item.bodyPart === bodypart) {
-              return (
-                <ExerciseCard1
-                  key={item.id}
-                  exerciseData={item}
-                  handleShow={handleShow}
-                  setExerciseData={setsingleExercise}
-                />
-              );
-            }
-          }
-        })}
-      </Row>
+          })}
+        </Row>
+      </div>
       <ModalExercise
         show={show}
         handleClose={handleClose}
