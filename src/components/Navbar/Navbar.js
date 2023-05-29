@@ -25,7 +25,7 @@ function NavBar({ onCategoryPage = false, onExercisePage = false }) {
                                     <><Nav.Link class="nav-link" href="/">Home</Nav.Link>
                                         <Nav.Link class="nav-link" href="/categories">Exercises</Nav.Link>
                                         <Nav.Link class="nav-link" href="/about">About us</Nav.Link>
-                                        <Nav.Link class="nav-link" href="/contact">Contact</Nav.Link></>}
+                                        </>}
                         </>
                         }
                         {/* <Nav.Link href="#home">Home</Nav.Link>

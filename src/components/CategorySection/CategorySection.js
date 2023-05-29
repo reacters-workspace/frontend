@@ -21,7 +21,7 @@ const CategorySection = () => {
         setfixedCard(categoryDB);
       });
   }
-  const arrayOFThree = fixedCard.filter((result) => result.id >= 7);
+  const arrayOFThree = fixedCard.filter((result) => result.id >= 5);
 
   useEffect(() => {
     fetchData();
@@ -31,7 +31,7 @@ const CategorySection = () => {
       <p className="main-para">Get a Perfect Body</p>
       <div className="container">
         <h2>Our Exercises</h2>
-        <div className="cat-section">
+        <div className="cat-section col-12">
           <Row>
             {arrayOFThree.map((item) => (
               <ExerciseCard fixedCard={item} key={item.id} />
