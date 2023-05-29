@@ -33,11 +33,15 @@ const CategorySection = () => {
         <div className="cat-section ">
           <Row>
             {arrayOFThree.map((item) => (
-              <ExerciseCard fixedCard={item} key={item.id} />
+              <ExerciseCard
+                className="card-style"
+                fixedCard={item}
+                key={item.id}
+              />
             ))}
           </Row>
           <Link to="/categories">
-            <button className="button">
+            <button className="my-button">
               <span>more exercises</span>
             </button>
           </Link>

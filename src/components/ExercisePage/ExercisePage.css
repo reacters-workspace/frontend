@@ -5,6 +5,7 @@
 }
 
 .header-in-exercises {
+
   display: flex;
   justify-content: center;
   text-transform: uppercase;
@@ -16,3 +17,4 @@
   border-bottom: 3px black solid;
   width: 30%;
 }
+

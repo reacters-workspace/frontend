@@ -13,7 +13,6 @@ export default function ExercisePage({ withDynamic }) {
   const [singleExercise, setsingleExercise] = useState({});
   const [header, setheader] = useState("");
 
-
   const { bodypart } = useParams();
 
   const [exerciseData, setExerciseData] = useState([]);
@@ -23,9 +22,6 @@ export default function ExercisePage({ withDynamic }) {
       .then((result) => {
         const exerciseDB = result.data.results;
 
-
-
-
         setExerciseData(exerciseDB);
       });
   }
@@ -33,12 +29,13 @@ export default function ExercisePage({ withDynamic }) {
     fetchData();
   }, []);
   return (
+
     <div >
       <div className="header-in-exercises"><h2>{bodypart}</h2></div>
+
       <div>
         <Row className="ExercisePage">
           {exerciseData.map((item) => {
-
             if (withDynamic === false) {
               if (exerciseData.indexOf(item) >= 1000) {
                 return (
@@ -72,7 +69,4 @@ export default function ExercisePage({ withDynamic }) {
       />
     </div>
   );
-
-
-
 }
