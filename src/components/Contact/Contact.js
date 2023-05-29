@@ -1,80 +1,71 @@
-
-import Form from 'react-bootstrap/Form';
 import './Contact.css'
-import axios from 'axios';
-
+import { useState } from 'react';
 function Contact() {
-
-  const handleSubmit = () => {
-
-    const data = {
-
-    };
-
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    usermessage: ''
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
     fetch('https://reacters-fitness.onrender.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(formData),
     })
       .then((response) => response.json())
       .then((result) => {
-        console.log('Movie added to favorites:', result);
-
+        console.log('your message sent successfully:', result);
       })
       .catch((error) => {
-        console.error('Error adding movie to favorites:', error);
-        // Handle error or display an error message to the user
+        console.error('Error sending message:', error);
       });
+    console.log(formData);
+    setFormData({ username: '', email: '', usermessage: '' });
   };
   return (
     <>
-      <div className='FormDiv'>
-        <Form class='contact-form'>
-          <h2>Feel free to ask anything</h2>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-
-            <Form.Control
-              className="mb-3 w-40 mx-auto d-block"
-              type="text"
-              placeholder="Name"
-            />
-            <Form.Control
-              className="mb-3 w-40 mx-auto d-block"
-              type="email"
-              placeholder="Email"
-            />
-            <Form.Control
-              className="mb-3 w-40 mx-auto d-block"
-              as="textarea"
-              rows={3}
-              placeholder="Message"
-            />
-            <button class="contact-btn" type="submit" onClick={handleSubmit}>Send Message</button>
-
-
-
-          </Form.Group>
-        </Form>
-      </div>
-      {/* <div className="mb-3">
-        <FontAwesomeIcon
-          icon="fa-regular fa-envelope"
-          style={{ color: "#ffae00" }}
-        />{" "}
-        example@exam.com
-      </div>
-      <div className="mb-3">
-        <FontAwesomeIcon
-          icon="fa-solid fa-phone"
-          style={{ color: "#ffae00" }}
-        />{" "}
-        +962 7x xxx xxxx
-      </div> */}
+      <form className='contact-form' onSubmit={handleSubmit}>
+        <h3>Feel free to ask anything</h3>
+        <input
+          className='w-30'
+          placeholder='Name'
+          type="text"
+          id="username"
+          name="username"
+          value={formData.username}
+          onChange={handleChange}
+          required
+        />
+        <input
+          className='w-30'
+          placeholder='Email'
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          className='w-30'
+          placeholder='Message'
+          type="text"
+          id="usermessage"
+          name="usermessage"
+          row={5}
+          value={formData.usermessage}
+          onChange={handleChange}
+          required
+        />
+        <button className='btn-hover w-30 text-center text-white ' type="submit">Send Message</button>
+      </form>
     </>
-
   );
 }
-
 export default Contact;
