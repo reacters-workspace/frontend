@@ -10,13 +10,10 @@ const CategorySection = () => {
   const [fixedCard, setfixedCard] = useState([]);
 
   function fetchData() {
-
-
     axios
       .get(`https://reacters-fitness.onrender.com/get-categories-db`)
       .then((result) => {
         const categoryDB = result.data.data;
-
 
         setfixedCard(categoryDB);
       });
@@ -28,19 +25,21 @@ const CategorySection = () => {
   }, []);
   return (
     <Fragment>
-      <p className="main-para">Get a Perfect Body</p>
       <div className="container">
+        <p className="main-para">Get a Perfect Body</p>
+        <div className="inner-container"></div>
+
         <h2>Our Exercises</h2>
-        <div className="cat-section col-12">
+        <div className="cat-section ">
           <Row>
             {arrayOFThree.map((item) => (
               <ExerciseCard fixedCard={item} key={item.id} />
             ))}
           </Row>
           <Link to="/categories">
-            <Button className="button">
+            <button className="button">
               <span>more exercises</span>
-            </Button>
+            </button>
           </Link>
         </div>
       </div>
