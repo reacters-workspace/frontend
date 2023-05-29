@@ -5,6 +5,7 @@
 }
 
 .title {
+    text-align: center;
     width: 100%;
     margin: 0;
     padding: 10px;
@@ -12,6 +13,7 @@
     font-weight: bold;
     color: #000000;
     background-color: rgb(255, 255, 255);
+    text-transform: capitalize;
 }
 
 .header {
@@ -33,3 +35,48 @@
     margin: 0;
     padding: 10px;
 }
+
+.modal-footer-test {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-footer-test p div {
+    font-family: "Crimson Text", serif;
+    font-family: "Philosopher", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #F13A11;
+    width: 200px;
+}
+
+.modal-footer-test p div span {
+    font-family: "Crimson Text", serif;
+    font-family: "Philosopher", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+    align-content: space-around;
+
+
+
+
+}
+
+
+.button-modal-style {
+    width: 150px;
+    background-color: black;
+}
+
+.button-modal-style:hover {
+    width: 150px;
+    background-color: #F13A11;
+}
+
+/* .div-test {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+} */

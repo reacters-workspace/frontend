@@ -34,13 +34,13 @@ export default function ExercisePage({ withDynamic }) {
   }, []);
   return (
     <div >
-      <div className="header-in-exercises"><h2>Name</h2></div>
+      <div className="header-in-exercises"><h2>{bodypart}</h2></div>
       <div>
         <Row className="ExercisePage">
           {exerciseData.map((item) => {
 
             if (withDynamic === false) {
-              if (exerciseData.indexOf(item) <= 300) {
+              if (exerciseData.indexOf(item) >= 1000) {
                 return (
                   <ExerciseCard1
                     key={item.id}
@@ -50,7 +50,7 @@ export default function ExercisePage({ withDynamic }) {
                   />
                 );
               }
-            } else if (exerciseData.indexOf(item) <= 300) {
+            } else if (exerciseData.indexOf(item) >= 1000) {
               if (item.bodyPart === bodypart) {
                 return (
                   <ExerciseCard1

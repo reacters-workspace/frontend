@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CategoryDiv from "../DivsReusable/CategoryDiv";
 import { Link } from "react-router-dom";
+import "../CategoryPage/CategoryPage.css"
 
 export default function CategoryPage() {
   const [categoryData, setCategoryData] = useState([]);
@@ -27,9 +28,9 @@ export default function CategoryPage() {
   return (
     <div className="cate-page">
       {categoryData.map((element) => (
-        
-          <CategoryDiv categoryName={element} key={element.id} />
-        
+
+        <CategoryDiv categoryName={element} key={element.id} />
+
       ))}
     </div>
   );

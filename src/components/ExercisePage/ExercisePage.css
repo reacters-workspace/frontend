@@ -5,5 +5,14 @@
 }
 
 .header-in-exercises {
-  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: auto;
+  margin-top: 60px;
+  /* background-color: grey; */
+  /* text-decoration: underline; */
+  border-bottom: 3px black solid;
+  width: 30%;
 }
