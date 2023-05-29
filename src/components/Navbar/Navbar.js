@@ -9,7 +9,7 @@ function NavBar({ onCategoryPage = false, onExercisePage = false }) {
         <Navbar  className="navbar fixed-top">
                 <Container>
                     <div>
-                    <Navbar.Brand href="/" class="nav-link"> <img style={{ width: '100px' }} src={Logo} alt="Logo" /></Navbar.Brand>
+                    <Navbar.Brand href="/" class="nav-link"> <img style={{ width: '65px' }} src={Logo} alt="Logo" /></Navbar.Brand>
                     <Navbar.Text class='logo-text'>Reacter Fitness</Navbar.Text>
                     </div>
                     <Nav class="nav-links">
