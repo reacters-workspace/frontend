@@ -10,13 +10,18 @@ const CategorySection = () => {
   const [fixedCard, setfixedCard] = useState([]);
 
   function fetchData() {
-    axios.get(`https://reacters-fitness.onrender.com/get-categories-db`).then((result) => {
-      const categoryDB = result.data.data;
 
-      setfixedCard(categoryDB);
-    });
+
+    axios
+      .get(`https://reacters-fitness.onrender.com/get-categories-db`)
+      .then((result) => {
+        const categoryDB = result.data.data;
+
+
+        setfixedCard(categoryDB);
+      });
   }
-  const arrayOFThree = fixedCard.filter(result => result.id >= 7);
+  const arrayOFThree = fixedCard.filter((result) => result.id >= 7);
 
   useEffect(() => {
     fetchData();
@@ -28,10 +33,9 @@ const CategorySection = () => {
         <h2>Our Exercises</h2>
         <div className="cat-section">
           <Row>
-
-            {
-              arrayOFThree.map(item => <ExerciseCard fixedCard={item} key={item.id} />)
-            }
+            {arrayOFThree.map((item) => (
+              <ExerciseCard fixedCard={item} key={item.id} />
+            ))}
           </Row>
           <Link to="/categories">
             <Button className="button">

@@ -1,6 +1,8 @@
+
 import Form from 'react-bootstrap/Form';
 import './Contact.css'
 import axios from 'axios';
+
 function Contact() {
   
   const handleSubmit = () => {
@@ -31,13 +33,45 @@ function Contact() {
       <Form class='contact-form'>
         <h2>Feel free to ask anything</h2>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Control id ='name' className="mb-3 h-50 w-40 mx-auto d-block" type="text" placeholder="Name" />
-          <Form.Control className="mb-3 h-50 w-40 mx-auto d-block" type="email" placeholder="Email" />
-          <Form.Control className="mb-3 w-40 mx-auto d-block" as="textarea" rows={3} placeholder='Message' />
-          <button class="contact-btn" type="submit" onClick={handleSubmit}>Send Message</button>
+
+          <Form.Control
+            className="mb-3 w-50 mx-auto d-block"
+            type="text"
+            placeholder="Name"
+          />
+          <Form.Control
+            className="mb-3 w-50 mx-auto d-block"
+            type="email"
+            placeholder="Email"
+          />
+          <Form.Control
+            className="mb-3 w-50 mx-auto d-block"
+            as="textarea"
+            rows={3}
+            placeholder="Message"
+          />
+           <button class="contact-btn" type="submit" onClick={handleSubmit}>Send Message</button>
+          
+           
+          
         </Form.Group>
       </Form>
-</>
+      {/* <div className="mb-3">
+        <FontAwesomeIcon
+          icon="fa-regular fa-envelope"
+          style={{ color: "#ffae00" }}
+        />{" "}
+        example@exam.com
+      </div>
+      <div className="mb-3">
+        <FontAwesomeIcon
+          icon="fa-solid fa-phone"
+          style={{ color: "#ffae00" }}
+        />{" "}
+        +962 7x xxx xxxx
+      </div> */}
+    </>
+
   );
 }
 

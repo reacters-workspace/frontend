@@ -1,3 +1,4 @@
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -28,10 +29,12 @@ function NavBar({ onCategoryPage = false, onExercisePage = false }) {
                         </>
                         }
                         {/* <Nav.Link href="#home">Home</Nav.Link>
+
                         <Nav.Link href="#features">Exercises</Nav.Link>
                         
                         <Nav.Link href="#pricing">About us</Nav.Link>
                         <Nav.Link href="#pricing">Contact</Nav.Link> */}
+
                     </Nav>
                 </Container>
             </Navbar>
@@ -39,6 +42,7 @@ function NavBar({ onCategoryPage = false, onExercisePage = false }) {
 
 
     );
+
 }
 
 export default NavBar;
