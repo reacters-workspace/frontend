@@ -29,18 +29,18 @@ function ModalExercise({ show, handleClose, singleExercise }) {
 
             </Modal.Body>
           </div>
-          <div className='footer'>
-            <Modal.Footer>
-              <div className='footer-close-button'>
-                <Button variant="secondary" onClick={saveAndExit}>
-                  Close
-                </Button>
-              </div>
-              {/* <Button variant="primary" onClick={handleClose}>
+
+          <Modal.Footer className='modal-footer-test'>
+            <p><div className='div-test'>Targeted Muscle: <span>{singleExercise.target}</span> </div><br /> <div className='div-test'>Equipment: <span>{singleExercise.equipment}</span></div> <br /> <div className='div-test'>BodyPart: <span>{singleExercise.bodyPart}</span> </div> </p>
+            <Button className='button-modal-style' variant="secondary" onClick={saveAndExit}>
+              Close
+            </Button>
+
+            {/* <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button> */}
-            </Modal.Footer>
-          </div>
+          </Modal.Footer>
+
         </Modal>
       </div>
     </>

@@ -1,9 +1,13 @@
 .allCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+=======
   /* height: 700px; */
 }
 
 .allCard:hover {
+  transition: 450ms;
   transform: translateY(-0.5rem);
   box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
 }
@@ -12,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .image1 {
   border: none;
   width: 100%;
@@ -19,6 +24,7 @@
 }
 
 .title1 {
+
   font-size: 17px;
   /* font-family: "Times New Roman", Times, serif; */
   /* padding-top: 20px; */
@@ -32,7 +38,11 @@
   margin-top: 20px;
   align-items: baseline;
   /* margin-bottom: 20px; */
+
 }
 .show-btn:hover {
-  background-color: #f13a11;
+
+  background-color: #F13A11;
+
 }
+

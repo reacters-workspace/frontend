@@ -19,7 +19,7 @@ export default function CategoryDiv({ categoryName }) {
     return (
         <>
             <div className="cate-parent-div">
-                <><Card  className="clickable-card">
+                <><Card  className="clickable-card-2">
                     <Card.Img variant="top" src={categoryName.category_url} />
                     <Card.Body>
                     <Link key={categoryName.id} to={`/exercises/${categoryName.category}`} className="clickable">

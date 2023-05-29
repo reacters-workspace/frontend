@@ -57,9 +57,11 @@
 .footer-clean .item.social {
   text-align: center;
 }
+
 .col-sm-4 {
   width: 400px;
 }
+
 @media (max-width: 767px) {
   .footer-clean .item {
     text-align: center;
@@ -73,7 +75,7 @@
   }
 }
 
-.footer-clean .item.social > a {
+.footer-clean .item.social>a {
   font-size: 24px;
   width: 40px;
   height: 40px;
@@ -88,19 +90,19 @@
   opacity: 0.8;
 }
 
-.footer-clean .item.social > a:hover {
+.footer-clean .item.social>a:hover {
   opacity: 0.9;
   color: #f13a11;
 }
 
 @media (max-width: 991px) {
-  .footer-clean .item.social > a {
+  .footer-clean .item.social>a {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 767px) {
-  .footer-clean .item.social > a {
+  .footer-clean .item.social>a {
     margin-top: 10px;
   }
 }
@@ -114,6 +116,7 @@
   opacity: 0.9;
   color: black;
 }
+
 .mb-3 {
   text-align: center;
   margin-top: 10px;

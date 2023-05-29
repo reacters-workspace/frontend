@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Philosopher:wght@700&family=Poppins:wght@200&display=swap");
+
 .cat-style {
   text-transform: capitalize;
   font-family: "Crimson Text", serif;
@@ -13,12 +14,14 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
 .clickable {
   text-decoration: none;
   text-align: center;
   /* padding: 10px; */
   /* box-shadow: 5px 10px 18px lightgray; */
 }
+
 .clickable:hover {
   text-decoration: none;
 }
@@ -27,14 +30,18 @@
   width: 100%;
   height: 200px;
 }
-.clickable-card {
+
+.clickable-card-2 {
+  height: 80%;
   width: 384px;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 5px 10px 18px lightgray;
+  margin: 0;
 }
+
 .clickable-card:hover {
   box-shadow: 5px 10px 18px grey;
   transition: 0.3s ease-in-out;
@@ -42,15 +49,28 @@
 
 .cate-parent-div {
   margin-top: 50px;
-  margin-bottom: 20px;
+
+  /* margin-bottom: 20px; */
+  height: 450px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #EEEEEE;
+
+
+
+
 }
+
 .cate-div-paragraph {
+  margin: 0;
+  height: 80%;
   width: 650px;
+  ;
+
+ 
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -60,9 +80,13 @@
   line-height: 1.5;
   color: black;
   font-weight: 600;
-  background-color: #eeeeee;
+
+  background-color: #fff;
   border-radius: 8px;
   padding: 10px 30px;
+  box-shadow: 5px 10px 18px lightgray;
+
+
 }
 
 .button1 {
@@ -72,5 +96,7 @@
 
 .button1:hover {
   text-decoration: none;
-  color: #f13a11;
+
+  color: #F13A11;
 }
+
