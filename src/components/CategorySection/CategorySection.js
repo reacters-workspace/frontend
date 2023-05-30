@@ -25,12 +25,14 @@ const CategorySection = () => {
   }, []);
   return (
     <Fragment>
-      <div className="container">
-        <p className="main-para">Get a Perfect Body</p>
 
-        <div className="inner-container"></div>
+      <div className="main-container">
+        <div className="inner-container">
+          <p className="main-para">Get a Perfect Body</p>
+          <h2>Our Exercises</h2>
+        </div>
 
-        <h2>Our Exercises</h2>
+
         <div className="cat-section ">
           <Row>
             {arrayOFThree.map((item) => (

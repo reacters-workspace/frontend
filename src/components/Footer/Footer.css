@@ -1,4 +1,4 @@
-/* .footer-container {
+/* /* .footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,11 +21,11 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-} */
+} 
 .footer-clean {
   /* padding: 50px 0; */
-  /* background-color: lightgray;
-  color: #4b4c4d; */
+/* background-color: lightgray;
+  color: #4b4c4d; 
   border-top: 1px solid lightgray;
 }
 
@@ -121,4 +121,146 @@
   text-align: center;
   margin-top: 10px;
   margin-left: 70px;
+} */
+/* New footer design */
+.footer {
+  width: 100%;
+  background: #00121b;
+  display: block;
+  height: auto;
 }
+
+.inner-footer {
+  width: 95%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #f13a11;
+  /* text-transform: capitalize; */
+}
+/* .footer-items h1 {
+  color: #f13a11;
+} */
+.footer-items p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+  color: #fff;
+}
+
+.footer-items h1 {
+  margin-top: 20px;
+  color: #f13a11;
+}
+.footer h1 .fitness-style {
+  color: #fff;
+}
+.footer-heading {
+  text-decoration: none;
+  color: #f13a11;
+}
+.footer-heading:hover {
+  text-decoration: none;
+}
+.border1 {
+  height: 3px;
+  width: 40px;
+  /* background: #ff9800; */
+  /* color: #ff9800; */
+  /* background-color: #ff9800; */
+  /* border: 0px; */
+}
+.border1 ul li {
+  padding-left: 20px;
+}
+ul {
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+ul a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+ul a:hover {
+  color: #f13a11;
+}
+
+ul li {
+  margin: 10px 0;
+  height: 25px;
+}
+
+li i {
+  margin-right: 20px;
+}
+
+.social-media {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
+.social-media a:hover {
+  color: #f13a11;
+}
+.social-media i {
+  height: 25px;
+  width: 25px;
+  margin: 20px 10px;
+  padding: 4px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.social-media i:hover {
+  transform: scale(1.5);
+}
+i {
+  padding-right: 10px;
+}
+.footer-bottom {
+  padding: 10px;
+  background: #00121b;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+  .footer-items {
+    width: 100%;
+  }
+}
+
+/* End of new footer design */
