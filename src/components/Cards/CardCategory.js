@@ -8,7 +8,7 @@ function ExerciseCard({ fixedCard }) {
       <Card.Img variant="top" src={fixedCard.category_url} />
       <Card.Body>
         <Link
-          to={`http://localhost:3000/exercises/${fixedCard.category}`}
+          to={`/exercises/${fixedCard.category}`}
           className="clickable"
         >
           <Card.Title className="card-title-design">
