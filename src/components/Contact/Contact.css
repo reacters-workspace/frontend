@@ -1,37 +1,37 @@
 .contact-btn {
-    background-color: black;
-    width: 40%;
-    color: white;
-    height: 50px;
-    border: none;
+  background-color: black;
+  width: 40%;
+  color: white;
+  height: 50px;
+  border: none;
 }
 
 .contact-btn:hover {
-    background-color: #f13a11;
+  background-color: #f13a11;
 }
 
 .contact-form {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .w-30 {
-    width: 30%;
-    margin-bottom: 10px;
-    text-align: left;
-    padding: 5px;
-    border-radius: 5px;
-    border-color: lightgray;
-    border-width: 1px;
+  width: 30%;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: lightgray;
+  border-width: 1px;
 }
 
 .btn-hover {
-    background-color: black;
+  background-color: black;
 }
 
 .btn-hover:hover {
-    background-color: #F13A11;
+  background-color: #f13a11;
 }

@@ -13,8 +13,8 @@ export default function Main() {
                 <ExerciseCard1 />
                 <ExerciseCard />
                 <ExerciseCard /> */}
-        <CategorySection />
         <OurServices />
+        <CategorySection />
       </div>
     </>
   );
