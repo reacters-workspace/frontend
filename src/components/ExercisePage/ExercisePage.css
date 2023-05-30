@@ -19,6 +19,7 @@
 }
 
 .exercises-div {
+
   margin-right: 30px;
   margin-top: 20px;
   min-height: 100vh;
@@ -26,6 +27,8 @@
   flex-direction: row;
   /* justify-content: start; */
   align-items: start;
+  min-height: 70vh;
+
 }
 
 .sad-noises {

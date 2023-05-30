@@ -3,45 +3,45 @@
   height: 75px;
   color: white;
 }
-
 .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
 }
-
 .nav-link {
   color: white;
-
 }
-
 .nav-link:hover {
-  color: #f13a11;
+  color: #F13A11;
 }
-
 .logo-text {
   color: white;
   text-decoration: none;
 }
-
 .logo-text:hover {
-  color: #f13a11;
+  color: #F13A11;
   text-decoration: none;
 
 }
 
-/* .logo-hover:hover {
-  filter: drop-shadow(100%);
-  background-color: #f13a11;
-} */
 
 .nav-link-style:hover {
   text-decoration: none;
-  color: #f13a11
+  color: #F13A11
 }
-
 .nav-link-style {
   text-decoration: none;
+}
 
+.nav-focus{
+  color: #F13A11;
+  text-decoration: none;
+  background-color: black;
+}
+
+.nav-focus:hover{
+  color: white;
+  text-decoration: none;
+  background-color: black;
 }
