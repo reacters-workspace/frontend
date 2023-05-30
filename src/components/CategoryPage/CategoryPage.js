@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import CategoryDiv from "../DivsReusable/CategoryDiv";
 import { Link } from "react-router-dom";
 import "../CategoryPage/CategoryPage.css"
+import { Row } from "react-bootstrap";
 
 export default function CategoryPage() {
   const [categoryData, setCategoryData] = useState([]);
@@ -26,12 +27,23 @@ export default function CategoryPage() {
     fetchData();
   }, []);
   return (
+
     <div className="cate-page">
-      {categoryData.map((element) => (
 
-        <CategoryDiv categoryName={element} key={element.id} />
+      <Row>
+        <div className="cate-content">
 
-      ))}
+
+          {categoryData.map((element) => (
+
+            <CategoryDiv categoryName={element} key={element.id} />
+
+
+          ))}
+
+        </div>
+      </Row>
     </div>
+
   );
 }

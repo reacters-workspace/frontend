@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ExerciseCard from "../Cards/CardCategory";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../DivsReusable/CategoryDiv.css"
 
@@ -19,29 +19,26 @@ export default function CategoryDiv({ categoryName }) {
     return (
         <>
             <div className="cate-parent-div">
+
                 <><Card className="clickable-card-2">
-                    <Card.Img variant="top" src={categoryName.category_url} />
-                    <Card.Body className="body-cate-text">
-                        <Link key={categoryName.id} to={`/exercises/${categoryName.category}`} className="clickable">
-                            <Card.Title className="card-title-design">
-                                <span className="cat-style">{categoryName.category}</span>
-
-                            </Card.Title>
-                        </Link >
-                        {/* <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text> */}
-
-                    </Card.Body>
+                    <Link className="cate-linking" to={`/exercises/${categoryName.category}`}>
+                        <Card.Img className="cate-card-image" variant="top" src={categoryName.category_url} />
+                    </Link>
                 </Card></>
 
-                <p className="cate-div-paragraph">{shown ? `${categoryName.description.substring(0, 503)}` : `${categoryName.description.substring(0, 150)}`}
-                    <br /><br /><div><Link className="button1" onClick={() => setShown(!shown)}>{shown ? "...See Less" : "...See More"}</Link></div>
+
+
+                <p className="cate-div-paragraph"><h3 >{categoryName.category}</h3> {shown ? `${categoryName.description.substring(0, 256)}` : `${categoryName.description.substring(0, 200)}`}
+
+                    <br /><br /><div><Link className="button1" onClick={() => setShown(!shown)}>{shown ? "See Less..." : "See More..."}</Link></div>
                 </p>
+
+
 
             </div>
 
         </>
     )
 }
+
+

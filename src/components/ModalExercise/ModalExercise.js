@@ -13,7 +13,7 @@ function ModalExercise({ show, handleClose, singleExercise }) {
         Launch demo modal
       </Button> */}
       <div className='cardModal'>
-        <Modal show={show} onHide={handleClose}>
+        <Modal centered={true} className='modal-container ' show={show} onHide={handleClose}>
           <div className='headerClose'>
 
             <Modal.Header closeButton>
@@ -22,16 +22,17 @@ function ModalExercise({ show, handleClose, singleExercise }) {
               </div>
             </Modal.Header>
           </div>
-          <div className='body'>
-            <Modal.Body>
 
-              <img src={singleExercise.gifUrl} alt={singleExercise.name} width='100%' />
+          <Modal.Body className='modal-body-test'>
+            <div className='body'>
+              <img src={singleExercise.gifUrl} alt={singleExercise.name} width='300px' />
+              <p><div className='div-test'>Targeted Muscle: <span>{singleExercise.target}</span> </div><br /> <div className='div-test'>Equipment: <span>{singleExercise.equipment}</span></div> <br /> <div className='div-test'>BodyPart: <span>{singleExercise.bodyPart}</span> </div> </p>
+            </div>
+          </Modal.Body>
 
-            </Modal.Body>
-          </div>
 
           <Modal.Footer className='modal-footer-test'>
-            <p><div className='div-test'>Targeted Muscle: <span>{singleExercise.target}</span> </div><br /> <div className='div-test'>Equipment: <span>{singleExercise.equipment}</span></div> <br /> <div className='div-test'>BodyPart: <span>{singleExercise.bodyPart}</span> </div> </p>
+            {/* <p><div className='div-test'>Targeted Muscle: <span>{singleExercise.target}</span> </div><br /> <div className='div-test'>Equipment: <span>{singleExercise.equipment}</span></div> <br /> <div className='div-test'>BodyPart: <span>{singleExercise.bodyPart}</span> </div> </p> */}
             <Button className='button-modal-style' variant="secondary" onClick={saveAndExit}>
               Close
             </Button>
