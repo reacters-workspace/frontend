@@ -5,6 +5,8 @@ import { Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ModalExercise from "../ModalExercise/ModalExercise";
 import "./ExercisePage.css";
+import { Route, Routes } from "react-router-dom";
+import NavBar from "../Navbar/Navbar";
 
 export default function ExercisePage({ withDynamic }) {
   const [show, setShow] = useState(false);
@@ -29,7 +31,9 @@ export default function ExercisePage({ withDynamic }) {
     fetchData();
   }, []);
   return (
-    <div className="exercises-div">
+ 
+ 
+                         <div className="exercises-div">
       <div className="header-in-exercises">
         <h2>{bodypart}</h2>
       </div>
@@ -69,5 +73,7 @@ export default function ExercisePage({ withDynamic }) {
         singleExercise={singleExercise}
       />
     </div>
+
+    
   );
 }

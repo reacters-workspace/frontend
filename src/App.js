@@ -17,13 +17,14 @@ import About from "./components/AboutPage/About";
 function App() {
   return (
     <div className="App">
+      
 
       <Routes>
         <Route path="/" element={<NavBar onCategoryPage={false} />} />
         <Route path="/categories" element={<NavBar onCategoryPage={true} />} />
         <Route path="/exercises" element={<NavBar onExercisePage={true} />} />
         <Route path="/exercises/:bodypart" element={<NavBar onExercisePage={true} />} />
-        <Route path="/about" element={<NavBar onExercisePage={true} />} />
+        <Route path="/about" element={<NavBar onAboutPage={true} />} />
       </Routes>
 
       <Routes>

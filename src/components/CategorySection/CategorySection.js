@@ -27,6 +27,7 @@ const CategorySection = () => {
     <Fragment>
       <div className="container">
         <p className="main-para">Get a Perfect Body</p>
+
         <div className="inner-container"></div>
 
         <h2>Our Exercises</h2>
