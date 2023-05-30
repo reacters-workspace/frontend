@@ -1,5 +1,5 @@
 .ExercisePage {
-  /* margin-top: 40px; */
+  margin-top: 40px;
   gap: 20px;
   justify-content: end;
   min-width: 1400px;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 25px;
   /* background-color: grey; */
   /* text-decoration: underline; */
   border-bottom: 3px black solid;
@@ -21,13 +21,13 @@
 .exercises-div {
 
   margin-right: 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   /* justify-content: start; */
   align-items: start;
-  min-height: 70vh;
+  /* min-height: 70vh; */
 
 }
 

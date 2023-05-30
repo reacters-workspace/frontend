@@ -7,7 +7,7 @@ function ListCategory() {
     const { bodypart } = useParams();
     return (
         <>
-            <ListGroup className='ul-list' as="ul">
+            <ListGroup className='ul-cate-list' >
 
                 <ListGroup.Item as="li" className='list-header-style' >Categories Table</ListGroup.Item>
                 <Link className='list-style' to="/exercises/back"><ListGroup.Item className="test-group-item" as="li"  >Back</ListGroup.Item></Link>

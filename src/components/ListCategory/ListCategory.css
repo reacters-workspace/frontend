@@ -1,11 +1,13 @@
 .nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: start;
     text-decoration: none;
     width: 40px;
-    margin-top: 70px
+    margin-top: 70px;
+    /* top: 20; */
+
 }
 
 .list-style {
@@ -21,7 +23,7 @@
     background-color: #F13A11;
 }
 
-.ul-list {
+.ul-cate-list {
     width: 300px;
 }
 
