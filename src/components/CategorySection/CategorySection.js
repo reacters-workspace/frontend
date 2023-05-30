@@ -25,11 +25,13 @@ const CategorySection = () => {
   }, []);
   return (
     <Fragment>
+
       <div className="main-container">
         <div className="inner-container">
           <p className="main-para">Get a Perfect Body</p>
           <h2>Our Exercises</h2>
         </div>
+
 
         <div className="cat-section ">
           <Row>
