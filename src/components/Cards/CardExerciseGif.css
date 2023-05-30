@@ -1,5 +1,7 @@
 .allCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+
 
 
   /* height: 700px; */
@@ -14,10 +16,13 @@
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }
 
 .image1 {
+  height: auto;
   border: none;
   width: 100%;
   border-bottom: solid lightgray;
@@ -31,13 +36,19 @@
   font-family: "Philosopher", sans-serif;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
-  width: 120%;
+  width: 80%;
+}
+
+.title1 {
+  width: auto;
 }
 
 .show-btn {
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
   align-items: baseline;
   /* margin-bottom: 20px; */
+
 }
 
 .show-btn:hover {
@@ -46,4 +57,3 @@
   background-color: #F13A11;
 
 }
-

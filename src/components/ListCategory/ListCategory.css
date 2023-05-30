@@ -1,0 +1,41 @@
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-decoration: none;
+    width: 40px;
+    margin-top: 70px
+}
+
+.list-style {
+
+    text-decoration: none;
+    width: 180px
+}
+
+.list-style:hover {
+
+    text-decoration: none;
+    margin: 0;
+    background-color: #F13A11;
+}
+
+.ul-list {
+    width: 300px;
+}
+
+.list-header-style {
+    text-decoration: none;
+    width: 180px;
+    background-color: black;
+    color: white;
+}
+
+.test-group-item:hover {
+    background-color: #F13A11;
+}
+
+.testing:visited {
+    color: #F13A11;
+}

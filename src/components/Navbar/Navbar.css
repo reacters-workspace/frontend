@@ -31,10 +31,10 @@
 
 }
 
-.logo-hover:hover {
+/* .logo-hover:hover {
   filter: drop-shadow(100%);
   background-color: #f13a11;
-}
+} */
 
 .nav-link-style:hover {
   text-decoration: none;

@@ -5,6 +5,7 @@ import { Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import ModalExercise from "../ModalExercise/ModalExercise";
 import "./ExercisePage.css";
+import ListCategory from "../ListCategory/ListCategory";
 
 export default function ExercisePage({ withDynamic }) {
   const [show, setShow] = useState(false);
@@ -29,45 +30,50 @@ export default function ExercisePage({ withDynamic }) {
     fetchData();
   }, []);
   return (
-    <div className="exercises-div">
+    <>
       <div className="header-in-exercises">
         <h2>{bodypart}</h2>
       </div>
+      <div className="exercises-div">
 
-      <div>
-        <Row className="ExercisePage">
-          {exerciseData.map((item) => {
-            if (withDynamic === false) {
-              if (exerciseData.indexOf(item) >= 1000) {
-                return (
-                  <ExerciseCard1
-                    key={item.id}
-                    exerciseData={item}
-                    handleShow={handleShow}
-                    setExerciseData={setsingleExercise}
-                  />
-                );
+        <div className="sad-noises fixed-top">
+          <ListCategory />
+        </div>
+        <div>
+          <Row className="ExercisePage">
+            {exerciseData.map((item) => {
+              if (withDynamic === false) {
+                if (exerciseData.indexOf(item) >= 1000) {
+                  return (
+                    <ExerciseCard1
+                      key={item.id}
+                      exerciseData={item}
+                      handleShow={handleShow}
+                      setExerciseData={setsingleExercise}
+                    />
+                  );
+                }
+              } else if (exerciseData.indexOf(item) >= 1000) {
+                if (item.bodyPart === bodypart) {
+                  return (
+                    <ExerciseCard1
+                      key={item.id}
+                      exerciseData={item}
+                      handleShow={handleShow}
+                      setExerciseData={setsingleExercise}
+                    />
+                  );
+                }
               }
-            } else if (exerciseData.indexOf(item) >= 1000) {
-              if (item.bodyPart === bodypart) {
-                return (
-                  <ExerciseCard1
-                    key={item.id}
-                    exerciseData={item}
-                    handleShow={handleShow}
-                    setExerciseData={setsingleExercise}
-                  />
-                );
-              }
-            }
-          })}
-        </Row>
+            })}
+          </Row>
+        </div>
+        <ModalExercise
+          show={show}
+          handleClose={handleClose}
+          singleExercise={singleExercise}
+        />
       </div>
-      <ModalExercise
-        show={show}
-        handleClose={handleClose}
-        singleExercise={singleExercise}
-      />
-    </div>
+    </>
   );
 }
