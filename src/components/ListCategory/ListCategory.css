@@ -34,10 +34,61 @@
     color: white;
 }
 
-.test-group-item:hover {
+/* .test-group-item:hover {
+    background-color: #F13A11;
+} */
+
+.list-style#active {
     background-color: #F13A11;
 }
 
-.testing:visited {
-    color: #F13A11;
+
+.waist #waist {
+    color: red;
+    transition: 500ms;
+}
+
+.chest #chest {
+    color: red;
+    transition: 500ms;
+}
+
+.neck #neck {
+    color: red;
+    transition: 500ms;
+}
+
+.cardio #cardio {
+    color: red;
+    transition: 500ms;
+}
+
+.back #back {
+    color: red;
+    transition: 500ms;
+}
+
+.upperarms #upper-arms {
+    color: red;
+    transition: 500ms;
+}
+
+.upperlegs #upper-legs {
+    color: red;
+    transition: 500ms;
+}
+
+.lowerarms #lower-arms {
+    color: red;
+    transition: 500ms;
+}
+
+.lowerlegs #lower-legs {
+    color: red;
+    transition: 500ms;
+}
+
+.shoulders #shoulders {
+    color: red;
+    transition: 500ms;
 }
