@@ -1,8 +1,8 @@
 .ExercisePage {
   margin-top: 40px;
-  gap: 20px;
-  justify-content: end;
-  /* min-width: 1400px; */
+  /* gap: 20px; */
+  /* justify-content: end; */
+  /* min-width: 1000px; */
 }
 
 .header-in-exercises {
