@@ -9,7 +9,7 @@ export default function TeamMember() {
     return (
         <div>
             <div className='AboutUs-img-div'>
-            
+
                 <div className='AbouUsHeader'>
 
                 </div>
@@ -27,7 +27,7 @@ export default function TeamMember() {
                         Hello, we are REACTERS
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel consectetur tortor. Phasellus sagittis in felis et mattis. Integer accumsan ligula ipsum, at pellentesque nisi feugiat vel. Aenean aliquet ante a fringilla dictum. In sit amet ipsum eu nunc tincidunt consequat. Mauris venenatis, erat nec gravida tempor, quam libero interdum mi, ac condimentum felis diam in velit. Quisque ac
+                        Welcome to our dedicated team of fitness enthusiasts! We are a passionate group of individuals committed to helping you achieve your health and wellness goals. With a deep understanding of the transformative power of fitness, our team is here to guide and support you on your fitness journey.
                     </p>
                 </div>
             </div>
@@ -41,71 +41,71 @@ export default function TeamMember() {
 
                 <div className="card-group-container ">
                     <div className="card-group">
-                       <div className='card-group'>
-                       <div className="card myCard">
-                            <img className="card-img-top" src={anas} alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-text">Anas</h3>
-                                <p>Software Developer</p>
-                                <div className="social-icons">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card myCard">
-                            <img className="card-img-top" src={hasan} alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-text">Hasan</h3>
-                                <p>Software Developer</p>
-                                <div className="social-icons">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="card myCard">
-                            <img className="card-img-top" src={murad} alt="Card image cap" />
-                            <div className="card-body team-body-info">
-                                <h3 className="card-text">Murad</h3>
-                                <p>Software Developer</p>
-                                <div className="social-icons">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
                         <div className='card-group'>
-                        <div className="card myCard">
-                            <img className="card-img-top" src={rama} alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-text">Rama</h3>
-                                <p>Software Developer</p>
-                                <div className="social-icons">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <div className="card myCard">
+                                <img className="card-img-top" src={anas} alt="Card image cap" />
+                                <div className="card-body">
+                                    <h3 className="card-text">Anas</h3>
+                                    <p>Software Developer</p>
+                                    <div className="social-icons">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card myCard">
+                                <img className="card-img-top" src={hasan} alt="Card image cap" />
+                                <div className="card-body">
+                                    <h3 className="card-text">Hasan</h3>
+                                    <p>Software Developer</p>
+                                    <div className="social-icons">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card myCard">
+                                <img className="card-img-top" src={murad} alt="Card image cap" />
+                                <div className="card-body team-body-info">
+                                    <h3 className="card-text">Murad</h3>
+                                    <p>Software Developer</p>
+                                    <div className="social-icons">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="card myCard">
-                            <img className="card-img-top" src={tasneem} alt="Card image cap" />
-                            <div className="card-body">
-                                <h3 className="card-text">Tasneem</h3>
-                                <p>Software Developer</p>
-                                <div className="social-icons">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <div className='card-group'>
+                            <div className="card myCard">
+                                <img className="card-img-top" src={rama} alt="Card image cap" />
+                                <div className="card-body">
+                                    <h3 className="card-text">Rama</h3>
+                                    <p>Software Developer</p>
+                                    <div className="social-icons">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card myCard">
+                                <img className="card-img-top" src={tasneem} alt="Card image cap" />
+                                <div className="card-body">
+                                    <h3 className="card-text">Tasneem</h3>
+                                    <p>Software Developer</p>
+                                    <div className="social-icons">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
-                      
-                      
+
+
                     </div>
                 </div>
             </div>
