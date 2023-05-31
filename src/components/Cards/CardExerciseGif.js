@@ -8,7 +8,7 @@ function ExerciseCard1({ exerciseData, handleShow, setExerciseData }) {
     setExerciseData(exerciseData);
   }
   return (
-    <Card className="allCard" style={{ width: "24rem" }}>
+    <Card className="allCard" style={{ width: "22rem" }}>
       <Card.Img className="image1" variant="top" src={exerciseData.gifUrl} />
 
       <Card.Body>
