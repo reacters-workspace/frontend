@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="border1"></div>
             <ul>
               <Link to="/">
-                <li>Home</li>
+                <li >Home</li>
               </Link>
               <Link to="/exercises">
                 <li>Exercises</li>
