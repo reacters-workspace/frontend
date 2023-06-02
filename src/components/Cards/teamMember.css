@@ -7,18 +7,22 @@
     vertical-align: middle;
     min-height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .about-text {
-    position: absolute;
+    /* position: absolute;
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     padding: 10px;
     width: 100%;
-    height: 100%;
+    height: 100%; */
+    position: absolute;
 }
 
 
@@ -52,7 +56,7 @@
 /*team member card*/
 
 .team-member-container {
-    min-height: 70vh;
+    /* min-height: 70vh;
     position: relative;
     width: 100%;
     height: 100%;
@@ -60,7 +64,9 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 4px 6px;
+    box-shadow: 0 4px 6px; */
+    /* width: 100%;
+    height: 100%; */
 }
 
 .TeamHeader h1 {
@@ -73,10 +79,19 @@
 }
 
 .card-group-container {
+    /* display: flex;
+    flex-wrap: wrap;
     height: 420px;
     max-width: 1200px;
-    margin: 0 auto;
-    flex: 2;
+    margin: 0 auto; */
+    /* flex: 2; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+
 }
 
 .myCard {
@@ -95,8 +110,9 @@
 
 
 .card-img-top {
-    height: fit-content;
+    height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 .team-body-info {
@@ -132,6 +148,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 /* end of team member*/
@@ -139,13 +156,17 @@
 /* about our team*/
 
 .long-text-container {
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    height: 310px;
-    flex: 1;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 60px 0px
+        /* width: 80%; */
+        /* height: 100%; */
+        /* margin: 0 auto; */
+        /* height: 310px; */
+
+
+
 }
 
 .long-text {
@@ -158,20 +179,21 @@
     text-align: center;
 }
 
-.long-text h1 {
-    width: 100%;
-    height: 20%;
+.long-text-container h1 {
+    /* width: 100%;
+    height: 20%; */
     font-size: 30px;
     font-weight: bold;
     color: #333333;
-    margin-top: 10px;
-    line-height: 2;
+    /* margin-top: 10px; */
+    /* line-height: 2; */
 
 }
 
-.long-text p {
-    width: 100%;
-    max-width: 800px;
+.long-text-container p {
+    margin: auto;
+    width: 90%;
+    /* max-width: 800px;  */
     font-size: 18px;
     color: #5b5b5b;
     line-height: 3;

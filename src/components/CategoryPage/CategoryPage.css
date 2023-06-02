@@ -1,7 +1,46 @@
 .cate-page {
     background-color: #EEEEEE;
+    width: 100%;
+
 
 }
+
+.cate-page h2 {
+    font-family: 'arial black';
+    font-size: 45px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    margin-left: 50%;
+    transform: translateX(-200%);
+    opacity: 0;
+    color: black;
+    animation: example 1.5s ease-out forwards;
+    animation-duration: 3s;
+    animation-delay: 850ms;
+}
+
+@keyframes example {
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(-45%);
+    }
+
+    75% {
+        transform: translateX(-52%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+
 
 .cate-header {
     background-color: #e6d2d2;
@@ -12,8 +51,16 @@
 }
 
 .cate-content {
-    margin-top: 60px;
+    /* margin-top: 20px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 250vh;
+    /* width: 100%; */
+}
+
+.parentDiv {
+    background-color: #EEEEEE;
 }

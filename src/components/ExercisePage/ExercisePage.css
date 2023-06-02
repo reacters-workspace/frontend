@@ -1,26 +1,67 @@
 .ExercisePage {
   margin-top: 40px;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
   /* gap: 20px; */
   /* justify-content: end; */
   /* min-width: 1000px; */
 }
 
 .header-in-exercises {
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin: auto;
-  margin-top: 25px;
-  /* background-color: grey; */
-  /* text-decoration: underline; */
-  border-bottom: 3px black solid;
-  width: 30%;
+  font-family: 'arial black';
+  font-size: 45px;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0;
+  margin-left: 50%;
+  transform: translateX(-200%);
+  opacity: 0;
+  color: black;
+  animation: example 1.5s ease-out forwards;
+  animation-duration: 3s;
+  animation-delay: 850ms;
+}
+
+.header-in-exercises h2 {
+  font-family: 'arial black';
+  font-size: 37px;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0;
+  margin-left: 50%;
+  transform: translateX(-200%);
+  opacity: 0;
+  color: black;
+  animation: example 1.5s ease-out forwards;
+  animation-duration: 3s;
+  animation-delay: 850ms;
+  text-transform: capitalize;
+}
+
+@keyframes example {
+
+  20% {
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(-45%);
+  }
+
+  75% {
+    transform: translateX(-52%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
 }
 
 .exercises-div {
-
-  margin-right: 30px;
+  margin: auto;
+  /* margin-right: 30px; */
   /* margin-top: 20px; */
   min-height: 100vh;
   display: flex;
@@ -39,7 +80,7 @@
   align-content: flex-start;
   margin-top: 52px;
   position: sticky;
-  top: 2px;
+  top: 15%;
   transition: all 2s;
 
 }

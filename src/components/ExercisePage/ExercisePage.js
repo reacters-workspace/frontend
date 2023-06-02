@@ -37,57 +37,58 @@ export default function ExercisePage({ withDynamic }) {
   }, []);
   return (
 
-    <>
-      {bodypart !== undefined ? <div className="header-in-exercises">
-        <h2>{bodypart}</h2>
-      </div> : <div className="header-in-exercises">
-        <h2>All Exercises</h2>
-      </div>}
-      {/* <div className="header-in-exercises">
+    <div className="parentDivEx" style={{ width: "100%" }}>
+      <div className="contentChildDiv" style={{ width: "90%", margin: "auto" }}>
+        {bodypart !== undefined ? <div className="header-in-exercises">
+          <h2>{bodypart}</h2>
+        </div> : <div className="header-in-exercises">
+          <h2>All Exercises</h2>
+        </div>}
+        {/* <div className="header-in-exercises">
         <h2>{bodypart}</h2>
       </div> */}
-      <div className="exercises-div">
+        <div className="exercises-div">
 
-        <div className="sad-noises">
-          <ListCategory />
-        </div>
-        <div>
-          <Row className="ExercisePage">
-            {exerciseData.map((item) => {
-              if (withDynamic === false) {
-                if (exerciseData.indexOf(item) >= 1000) {
-                  return (
-                    <ExerciseCard1
-                      key={item.id}
-                      exerciseData={item}
-                      handleShow={handleShow}
-                      setExerciseData={setsingleExercise}
-                    />
-                  );
+          <div className="sad-noises">
+            <ListCategory />
+          </div>
+          <div>
+            <Row className="ExercisePage">
+              {exerciseData.map((item) => {
+                if (withDynamic === false) {
+                  if (exerciseData.indexOf(item) >= 1000) {
+                    return (
+                      <ExerciseCard1
+                        key={item.id}
+                        exerciseData={item}
+                        handleShow={handleShow}
+                        setExerciseData={setsingleExercise}
+                      />
+                    );
+                  }
+                } else if (exerciseData.indexOf(item) >= 1000) {
+                  if (item.bodyPart === bodypart) {
+                    return (
+                      <ExerciseCard1
+                        key={item.id}
+                        exerciseData={item}
+                        handleShow={handleShow}
+                        setExerciseData={setsingleExercise}
+                      />
+                    );
+                  }
                 }
-              } else if (exerciseData.indexOf(item) >= 1000) {
-                if (item.bodyPart === bodypart) {
-                  return (
-                    <ExerciseCard1
-                      key={item.id}
-                      exerciseData={item}
-                      handleShow={handleShow}
-                      setExerciseData={setsingleExercise}
-                    />
-                  );
-                }
-              }
-            })}
-          </Row>
+              })}
+            </Row>
+          </div>
+          <ModalExercise
+            show={show}
+            handleClose={handleClose}
+            singleExercise={singleExercise}
+          />
         </div>
-        <ModalExercise
-          show={show}
-          handleClose={handleClose}
-          singleExercise={singleExercise}
-        />
       </div>
-
-    </>
+    </div>
 
   );
 }

@@ -27,22 +27,25 @@ export default function CategoryPage() {
     fetchData();
   }, []);
   return (
-
-    <div className="cate-page">
-
-      <Row>
-        <div className="cate-content">
-
-
-          {categoryData.map((element) => (
-
-            <CategoryDiv categoryName={element} key={element.id} />
+    <div className="parentDiv" style={{ width: "100%" }}>
+      <div style={{ width: "90%", margin: "auto" }}>
+        <div className="cate-page  col-12">
+          <h2>All Categories</h2>
+          <Row >
+            <div className="cate-content">
 
 
-          ))}
+              {categoryData.map((element) => (
 
+                <CategoryDiv categoryName={element} key={element.id} />
+
+
+              ))}
+
+            </div>
+          </Row>
         </div>
-      </Row>
+      </div>
     </div>
 
   );

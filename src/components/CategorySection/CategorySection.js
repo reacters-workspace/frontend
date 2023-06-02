@@ -26,30 +26,30 @@ const CategorySection = () => {
   return (
     <Fragment>
 
-      <div className="main-container">
-        <div className="inner-container">
-          <p className="main-para">Get a Perfect Body</p>
-          <h2>Our Exercises</h2>
-        </div>
 
-
-        <div className="cat-section ">
-          <Row>
-            {arrayOFThree.map((item) => (
-              <ExerciseCard
-                className="card-style"
-                fixedCard={item}
-                key={item.id}
-              />
-            ))}
-          </Row>
-          <Link to="/categories">
-            <button className="my-button">
-              <span>more exercises</span>
-            </button>
-          </Link>
-        </div>
+      <div className="inner-container">
+        <p className="main-para">Get a Perfect Body</p>
+        <h2>Our Exercises</h2>
       </div>
+
+
+      <div className="cat-section ">
+        <Row className="banana col-12 " style={{ margin: "auto" }}>
+          {arrayOFThree.map((item) => (
+            <ExerciseCard
+              className="card-style"
+              fixedCard={item}
+              key={item.id}
+            />
+          ))}
+        </Row>
+        <Link to="/categories">
+          <button className="my-button">
+            <span>more exercises</span>
+          </button>
+        </Link>
+      </div>
+
     </Fragment>
   );
 };

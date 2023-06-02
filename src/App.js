@@ -14,10 +14,11 @@ import About from "./components/AboutPage/About";
 
 
 
+
 function App() {
   return (
     <div className="App">
-      
+
 
       <Routes>
         <Route path="/" element={<NavBar onCategoryPage={false} />} />

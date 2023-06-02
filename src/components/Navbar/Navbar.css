@@ -3,22 +3,27 @@
   height: 75px;
   color: white;
 }
+
 .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
 }
+
 .nav-link {
   color: white;
 }
+
 .nav-link:hover {
   color: #F13A11;
 }
+
 .logo-text {
   color: white;
   text-decoration: none;
 }
+
 .logo-text:hover {
   color: #F13A11;
   text-decoration: none;
@@ -30,18 +35,26 @@
   text-decoration: none;
   color: #F13A11
 }
+
 .nav-link-style {
   text-decoration: none;
 }
 
-.nav-focus{
+.nav-focus {
   color: #F13A11;
   text-decoration: none;
   background-color: black;
 }
 
-.nav-focus:hover{
+.nav-focus:hover {
   color: white;
   text-decoration: none;
   background-color: black;
+}
+
+.logo-name-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
