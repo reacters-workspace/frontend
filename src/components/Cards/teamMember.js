@@ -24,12 +24,14 @@ export default function TeamMember() {
             {/*-------------------------------------------------------------------------------------------------------------------------*/}
             <div className="long-text-container">
 
+
                 <h1 >
                     Hello, we are REACTERS
                 </h1>
                 <p>
                     Welcome to our dedicated team of fitness enthusiasts! We are a passionate group of individuals committed to helping you achieve your health and wellness goals. With a deep understanding of the transformative power of fitness, our team is here to guide and support you on your fitness journey.
                 </p>
+
 
             </div>
 
@@ -41,6 +43,7 @@ export default function TeamMember() {
                 </dev>
 
                 <div className="card-group-container ">
+
                     <div className="card myCard">
                         <img className="card-img-top" src={anas} alt="Card image cap" />
                         <div className="card-body">
@@ -100,6 +103,7 @@ export default function TeamMember() {
 
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
