@@ -1,11 +1,12 @@
-.hero-container{
+.hero-container {
     background-image: url('../../assets/hero-bg.jpg');
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     vertical-align: middle;
     min-height: 100vh;
     position: relative;
+    width: 100%;
 }
 
 .bg-overlay {
@@ -38,13 +39,15 @@
 }
 
 .text-center {
-    text-align: center!important;
-}
-.mt-5, .my-5 {
-    margin-top: 3rem!important;
+    text-align: center !important;
 }
 
-.hero-text{
+.mt-5,
+.my-5 {
+    margin-top: 3rem !important;
+}
+
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,13 +56,10 @@
     padding: 10px;
 }
 
-#upper-case{
+#upper-case {
     text-transform: uppercase;
 }
-.text-secondary{
+
+.text-secondary {
     text-transform: capitalize;
 }
-
-
-
-

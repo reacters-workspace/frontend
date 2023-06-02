@@ -11,7 +11,7 @@ export default function About() {
           
             <TeamMember />
 
-            <Contact />
+            
             {/* <Footer/> */}
         </>
     )

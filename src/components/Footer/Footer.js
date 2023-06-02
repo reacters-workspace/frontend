@@ -22,8 +22,8 @@ export default function Footer() {
           {/* <!--  for quick links  --> */}
           <div className="footer-items">
             <h3>Quick Links</h3>
-            <div className="border1"></div>
-            <ul>
+            {/* <div className="border1"></div> */}
+            <ul className="quick-links-list">
               <Link to="/">
                 <li >Home</li>
               </Link>

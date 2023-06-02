@@ -82,7 +82,7 @@
   line-height: 1.5;
   color: black;
   font-weight: 600;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
   align-items: center;
 
   background-color: #fff;
