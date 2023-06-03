@@ -18,13 +18,15 @@ function ScheduleCard({ singleCardData, deleteChangeState, handleShow, setsingle
         handleShow()
         setisUpdated(false)
     }
-    function updateScheduleDay() {
-        const updatedDay = {
-            week_day: ""
-        }
-        axios.put(`https://reacters-fitness.onrender.com/update-schedule/${singleCardData.id}`, updatedDay)
 
-    }
+    // function updateScheduleDay() {
+    //     const updatedDay = {
+    //         week_day: ""
+    //     }
+    //     axios.put(`https://reacters-fitness.onrender.com/update-schedule/${singleCardData.id}`, updatedDay)
+
+
+    // }
     function deleteSchedule() {
         axios.delete(`https://reacters-fitness.onrender.com/deleteSchedule/${singleCardData.id}`).then(returned => console.log(returned))
             .catch(err => console.log(err))
