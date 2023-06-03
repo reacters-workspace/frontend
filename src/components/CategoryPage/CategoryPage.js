@@ -28,7 +28,7 @@ export default function CategoryPage() {
   }, []);
   return (
     <div className="parentDiv" style={{ width: "100%" }}>
-      <div style={{ width: "90%", margin: "auto" }}>
+      <div style={{ width: "95%", margin: "auto" }}>
         <div className="cate-page  col-12">
           <h2>All Categories</h2>
           <Row >

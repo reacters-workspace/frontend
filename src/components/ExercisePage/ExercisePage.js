@@ -38,7 +38,7 @@ export default function ExercisePage({ withDynamic }) {
   return (
 
     <div className="parentDivEx" style={{ width: "100%" }}>
-      <div className="contentChildDiv" style={{ width: "90%", margin: "auto" }}>
+      <div className="contentChildDiv" style={{ width: "95%", margin: "auto" }}>
         {bodypart !== undefined ? <div className="header-in-exercises">
           <h2>{bodypart}</h2>
         </div> : <div className="header-in-exercises">
