@@ -11,7 +11,7 @@ function ListCategory() {
         <>
             {bodypart !== undefined ? <ListGroup className='ul-cate-list' >
 
-                <ListGroup.Item as="li" className='list-header-style' >Categories Table</ListGroup.Item>
+                <ListGroup.Item  className='list-header-style' >Categories Table</ListGroup.Item>
                 <Link className='list-style' to="/exercises/back"><ListGroup.Item className={bodypart.split(" ").join("")} as="li"  ><span id="back">Back</span></ListGroup.Item></Link>
                 <Link className='list-style' to="/exercises/cardio"><ListGroup.Item className={bodypart.split(" ").join("")} as="li"><span id="cardio">Cardio</span></ListGroup.Item></Link>
                 <Link className='list-style' to="/exercises/chest"><ListGroup.Item className={bodypart.split(" ").join("")} as="li"><span id="chest">Chest</span></ListGroup.Item></Link>
@@ -25,7 +25,7 @@ function ListCategory() {
 
             </ListGroup> : <ListGroup className='ul-cate-list' >
 
-                <ListGroup.Item as="li" className='list-header-style' >Categories Table</ListGroup.Item>
+                <ListGroup.Item  className='list-header-style' >Categories Table</ListGroup.Item>
                 <Link className='list-style' to="/exercises/back"><ListGroup.Item as="li"  ><span id="back">Back</span></ListGroup.Item></Link>
                 <Link className='list-style' to="/exercises/cardio"><ListGroup.Item as="li"><span id="cardio">Cardio</span></ListGroup.Item></Link>
                 <Link className='list-style' to="/exercises/chest"><ListGroup.Item as="li"><span id="chest">Chest</span></ListGroup.Item></Link>
