@@ -21,7 +21,7 @@ export default function SchedulePage({ onSchedulePage }) {
     }
     function fetchData() {
         axios
-            .get(`http://localhost:3009/schedule`)
+            .get(`https://reacters-fitness.onrender.com/schedule`)
             .then((result) => {
                 console.log(result.data.data)
                 const exerciseDB = result.data.data;
@@ -41,97 +41,100 @@ export default function SchedulePage({ onSchedulePage }) {
     return (
         <>
             <div className="parent-schedule-div">
-                <div className="days-div">
+                <div className="parent-sub-div">
+                    <h2 className="schedule-page-heading">Schedule</h2>
+                    <div className="days-div">
 
-                    <Row className="cards-in-schedule-page">
-                        <h2>Sunday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'sunday')
-                                return (
+                        <Row className="cards-in-schedule-page col-12" >
+                            <h2>Sunday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'sunday')
+                                    return (
 
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
 
-                                )
+                                    )
 
-                        })}
-
-
-
-                        <h2>Monday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'monday')
-                                return (
-
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
-                                )
-
-                        })}
-
-
-                        <h2>Tuesday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'tuesday')
-                                return (
-
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
-                                )
-
-                        })}
-
-
-                        <h2>Wednesday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'wednesday')
-                                return (
-
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
-                                )
-
-                        })}
+                            })}
 
 
 
-                        <h2>Thursday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'thursday')
-                                return (
+                            <h2>Monday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'monday')
+                                    return (
 
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
-                                )
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                    )
 
-                        })}
-
-
-                        <h2>Friday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'friday')
-                                return (
-
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
-                                )
-
-                        })}
+                            })}
 
 
-                        <h2>Saturday</h2>
-                        {scheduleCards.map(item => {
-                            if (item.week_day === 'saturday')
-                                return (
+                            <h2>Tuesday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'tuesday')
+                                    return (
 
-                                    <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
-                                )
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                    )
 
-                        })}
-                    </Row>
+                            })}
+
+
+                            <h2>Wednesday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'wednesday')
+                                    return (
+
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                    )
+
+                            })}
+
+
+
+                            <h2>Thursday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'thursday')
+                                    return (
+
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                    )
+
+                            })}
+
+
+                            <h2>Friday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'friday')
+                                    return (
+
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                    )
+
+                            })}
+
+
+                            <h2>Saturday</h2>
+                            {scheduleCards.map(item => {
+                                if (item.week_day === 'saturday')
+                                    return (
+
+                                        <ScheduleCard setisUpdated={setisUpdated} setOnUpdate={setOnUpdate} setsingleExercise={setsingleExercise} handleShow={handleShow} singleCardData={item} key={item.id} deleteChangeState={deleteChangeState} />
+                                    )
+
+                            })}
+                        </Row>
+                    </div>
+                    <ModalExercise
+                        onUpdate={onUpdate}
+                        show={show}
+                        handleClose={handleClose}
+                        singleExercise={singleExercise}
+                        onSchedulePage={onSchedulePage}
+                        setisUpdated={setisUpdated}
+                    />
                 </div>
-                <ModalExercise
-                    onUpdate={onUpdate}
-                    show={show}
-                    handleClose={handleClose}
-                    singleExercise={singleExercise}
-                    onSchedulePage={onSchedulePage}
-                    setisUpdated={setisUpdated}
-                />
             </div >
         </>
     )

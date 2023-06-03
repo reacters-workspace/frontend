@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/Logo/ezgif-3-8c16a90147-removebg-preview.png'
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-function NavBar({ onCategoryPage = false, onExercisePage = false, onAboutPage = false }) {
+function NavBar({ onCategoryPage = false, onExercisePage = false, onAboutPage = false, onSchedulePage = false }) {
     return (
         <Navbar className="navbar">
             <Container>
@@ -18,25 +18,37 @@ function NavBar({ onCategoryPage = false, onExercisePage = false, onAboutPage = 
                             <><Nav.Link class="nav-link " href="/">Home</Nav.Link>
                                 <Nav.Link className="nav-focus" href="/categories">Exercises Categories</Nav.Link>
                                 <Nav.Link class="nav-link" href="/exercises">Exercises</Nav.Link>
+                                <Nav.Link class="nav-link" href="/schedule">Schedule</Nav.Link>
                                 <Nav.Link class="nav-link" href="/about">About us</Nav.Link>
+
                             </> :
                             onExercisePage ?
                                 <><Nav.Link class="nav-link" href="/">Home</Nav.Link>
                                     <Nav.Link class="nav-link " href="/categories">Exercises Categories</Nav.Link>
                                     <Nav.Link className="nav-focus" href="/exercises">Exercises</Nav.Link>
+                                    <Nav.Link class="nav-link" href="/schedule">Schedule</Nav.Link>
                                     <Nav.Link class="nav-link" href="/about">About us</Nav.Link>
                                 </> :
                                 onAboutPage ?
                                     <><Nav.Link class="nav-link" href="/">Home</Nav.Link>
                                         <Nav.Link class="nav-link" href="/categories">Exercises Categories</Nav.Link>
                                         <Nav.Link class="nav-link" href="/exercises">Exercises</Nav.Link>
+                                        <Nav.Link class="nav-link" href="/schedule">Schedule</Nav.Link>
                                         <Nav.Link className="nav-focus" href="/about">About us</Nav.Link>
-                                    </> :
-                                    <><Nav.Link className="nav-focus" class="nav-link" href="/">Home</Nav.Link>
+
+                                    </> : onSchedulePage ? <><Nav.Link className="nav-link" class="nav-link" href="/">Home</Nav.Link>
                                         <Nav.Link class="nav-link " href="/categories">Exercises Categories</Nav.Link>
                                         <Nav.Link class="nav-link " href="/exercises">Exercises</Nav.Link>
+                                        <Nav.Link className="nav-focus" href="/schedule">Schedule</Nav.Link>
                                         <Nav.Link class="nav-link" href="/about">About us</Nav.Link>
-                                    </>}
+                                    </> :
+                                        <><Nav.Link className="nav-focus" class="nav-link" href="/">Home</Nav.Link>
+                                            <Nav.Link class="nav-link " href="/categories">Exercises Categories</Nav.Link>
+                                            <Nav.Link class="nav-link " href="/exercises">Exercises</Nav.Link>
+                                            <Nav.Link class="nav-link" href="/schedule">Schedule</Nav.Link>
+                                            <Nav.Link class="nav-link" href="/about">About us</Nav.Link>
+                                        </>
+                        }
                     </>
                     }
                     {/* <Nav.Link href="#home">Home</Nav.Link>
