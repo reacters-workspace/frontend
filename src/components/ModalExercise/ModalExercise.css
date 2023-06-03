@@ -89,3 +89,12 @@
 .modal-footer-test {
     justify-content: end;
 }
+
+.drop-down-list {
+    border: none;
+    background-color: #F13A11;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
