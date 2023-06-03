@@ -21,7 +21,7 @@ export default function SchedulePage({ onSchedulePage }) {
     }
     function fetchData() {
         axios
-            .get(`http://localhost:3009/schedule`)
+            .get(`https://reacters-fitness.onrender.com/schedule`)
             .then((result) => {
                 console.log(result.data.data)
                 const exerciseDB = result.data.data;
