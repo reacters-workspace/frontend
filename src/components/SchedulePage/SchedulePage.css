@@ -1,5 +1,6 @@
 .parent-schedule-div {
     min-height: 100vh;
+    width: 100%;
 }
 
 /* .days-div {
@@ -14,8 +15,10 @@
     justify-content: center;
     /* border-bottom: 2px solid black; */
     /* display: flex; */
+    margin: auto;
 
 }
+
 
 .cards-in-schedule-page h2 {
     width: 80%;
@@ -24,4 +27,46 @@
     background-color: lightgrey;
     border-radius: 8px;
 
+}
+
+.schedule-page-heading {
+    font-family: 'arial black';
+    font-size: 37px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-left: 50%;
+    transform: translateX(-200%);
+    opacity: 0;
+    color: black;
+    animation: example 1.5s ease-out forwards;
+    animation-duration: 3s;
+    animation-delay: 850ms;
+    text-transform: capitalize;
+}
+
+@keyframes example {
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(-45%);
+    }
+
+    75% {
+        transform: translateX(-52%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+.parent-sub-div {
+    width: 90%;
+    margin: auto;
 }

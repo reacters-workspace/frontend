@@ -6,16 +6,18 @@ import './ModalExercise.css';
 import axios from 'axios';
 function ModalExercise({ show, handleClose, singleExercise, onSchedulePage = false, onUpdate = false, setisUpdated }) {
 
-  const [comment, setComment] = useState('')
 
+  const [comment, setComment] = useState('')
 
   const handleChange = (e) => {
     e.preventDefault()
     setComment(e.target.value)
+
   }
 
   function SaveScheduleToDataBase() {
-    console.log(comment)
+
+    // console.log(comment)
     if (comment !== "") {
       const obj = {
         bodypart: singleExercise.bodyPart,
@@ -25,7 +27,7 @@ function ModalExercise({ show, handleClose, singleExercise, onSchedulePage = fal
         exercise_target: singleExercise.target,
         week_day: comment
       }
-      axios.post(`http://localhost:3009/schedule`, obj).then(res => console.log(res.data)).catch(err => { console.log(err) })
+      axios.post(`https://reacters-fitness.onrender.com/schedule`, obj).then(res => console.log(res.data)).catch(err => { console.log(err) })
       setComment('')
     }
 
@@ -39,23 +41,27 @@ function ModalExercise({ show, handleClose, singleExercise, onSchedulePage = fal
 
     }
     if (comment !== "") {
-      axios.put(`http://localhost:3009/update-schedule/${singleExercise.id}`, updatedDay).then(res => console.log(res.data)).catch(err => { console.log(err) })
-      console.log(updatedDay)
+      axios.put(`https://reacters-fitness.onrender.com/update-schedule/${singleExercise.id}`, updatedDay).then(res => console.log(res.data)).catch(err => { console.log(err) })
+      // console.log(updatedDay)
       setComment('')
 
     }
-    setisUpdated(true)
+
     handleClose()
+    setisUpdated(true)
+
 
 
   }
-  console.log(comment)
+
+  // console.log(comment)
   function saveAndExit() {
     SaveScheduleToDataBase()
     handleClose()
   }
-  console.log(singleExercise)
-  console.log(onSchedulePage)
+  // console.log(singleExercise)
+  // console.log(onSchedulePage)
+
   return (
     <>
       {/* <Button variant="primary" onClick={handleShow}>
@@ -83,7 +89,7 @@ function ModalExercise({ show, handleClose, singleExercise, onSchedulePage = fal
           <Modal.Footer className='modal-footer-test'>
             {/* <p><div className='div-test'>Targeted Muscle: <span>{singleExercise.target}</span> </div><br /> <div className='div-test'>Equipment: <span>{singleExercise.equipment}</span></div> <br /> <div className='div-test'>BodyPart: <span>{singleExercise.bodyPart}</span> </div> </p> */}
 
-            {console.log(onSchedulePage)}
+            {/* {console.log(onSchedulePage)} */}
             {onUpdate ? <>
               <form onChange={handleChange}>
                 <select className='drop-down-list' name="cars" id="cars" >

@@ -33,6 +33,9 @@ export default function Footer() {
               <Link to="/categories">
                 <li>Categories</li>
               </Link>
+              <Link to="/schedule">
+                <li>Schedule</li>
+              </Link>
               <Link to="/about">
                 <li>About</li>
               </Link>
