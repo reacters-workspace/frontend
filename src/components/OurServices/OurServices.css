@@ -1,31 +1,80 @@
 .ourservices-sec {
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  font-family: "Crimson Text", serif;
+  font-family: "Poppins", sans-serif;
+  color: black;
+ font-size: large;
+ font-weight: 600;
+ line-height: 2;
+ text-align: center;
+
+}
+.ourservices-sec p{
+  width: 80%;
+
+}
+
+.ourservices-sec h4{
+
+  font-family: "Philosopher", sans-serif;
+
+  
+}
+
+.ouer-services-div{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-content: center;
-  width: 100%;
-  /* height: 300px; */
-  padding-top: 70px;
-  /* margin: auto; */
-  /* background-color: #f0f0f0; */
-  /* margin-top: 5px; */
-  /* margin-bottom: 10px; */
-  /* border-bottom: 1px solid black; */
+  align-items: center;
+  
+ 
 }
-
-.ourservices-sec p {
-  /* margin-top: 20px; */
-  /* float: left; */
-  display: inline-block;
-  text-align: center;
+.ouer-services-div h2{
+  width: fit-content;
+  position: relative;
+  font-size:3vw;
+  margin-right: 10px;
+  font-family: 'arial black';
   line-height: 2;
-  font-size: 18px;
-  word-spacing: 2px;
-  /* margin-top: 10px; */
-  padding: 0 100px;
-  /* margin-bottom: 80px; */
+  padding: 10px;
 }
 
-.ourservices-sec p span {
-  font-weight: 700;
+.service-text{
+  width: fit-content;
+  position: relative;
+  color: white;
+  -webkit-text-stroke: 0.1vw black;
+  font-size:3vw;
+
+}
+
+.service-text::before{
+  content:  attr(data-text);
+  position: absolute;
+  top: 3;
+  left: 3;
+  width: 3;
+  height: 100%;
+  color: black;
+  -webkit-text-stroke: 0vw black;
+  border-right: 2px solid black;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 100%;
+  }
 }

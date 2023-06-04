@@ -1,14 +1,14 @@
-.nav-list {
+/* .nav-list {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: start;
+    /*align-items: start;
     text-decoration: none;
     width: 40px;
     margin-top: 70px;
     /* top: 20; */
 
-}
+/*}
 
 .list-style {
 
@@ -26,9 +26,9 @@
 .ul-cate-list {
     width: 300px;
     /* height: 800px; */
-}
 
-.list-header-style {
+
+/*.list-header-style {
     text-decoration: none;
     width: 180px;
     background-color: black;
@@ -39,7 +39,7 @@
     background-color: #F13A11;
 } */
 
-.list-style#active {
+/*.list-style#active {
     background-color: #F13A11;
 }
 
@@ -92,4 +92,108 @@
 .shoulders #shoulders {
     color: red;
     transition: 500ms;
+} */
+
+.list-header-style {
+    text-decoration: none;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.list-style {
+    background-color: black;
+    color: white;
+    display: block;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* position: relative; */
+    text-decoration: none;    
+}
+
+.list-style:hover {
+    text-decoration: none;
+}
+
+.ul-cate-list li#active {
+    background-color: #F13A11;
+}
+
+.ul-cate-list{
+    position:sticky;
+    width: 100%;
+    text-align: center;
+}
+
+.ul-cate-list li {
+    border: 1px solid black;
+    background-color:black;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+}
+
+.ul-cate-list li:hover{
+    background-color: lightgray;
+    text-decoration: none;
+    color: #F13A11;
+}
+
+
+
+.waist #waist {
+    color: red;
+    transition: 500ms;
+}
+
+.chest #chest {
+    color: red;
+    transition: 500ms;
+}
+
+.neck #neck {
+    color: red;
+    transition: 500ms;
+}
+
+.cardio #cardio {
+    color: red;
+    transition: 500ms;
+}
+
+.back #back {
+    color: red;
+    transition: 500ms;
+}
+
+.upperarms #upper-arms {
+    color: red;
+    transition: 500ms;
+}
+
+.upperlegs #upper-legs {
+    color: red;
+    transition: 500ms;
+}
+
+.lowerarms #lower-arms {
+    color: red;
+transition: 500ms;
+}
+
+.lowerlegs #lower-legs {
+    color: red;
+    transition: 500ms;
+}
+
+.shoulders #shoulders {
+    color: red;
+    transition: 500ms;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
