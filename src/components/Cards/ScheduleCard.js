@@ -13,10 +13,11 @@ function ScheduleCard({ singleCardData, deleteChangeState, handleShow, setsingle
     }
 
     function ChangeStateToUpdate() {
+        setisUpdated(false)
         setsingleExercise(singleCardData)
         setOnUpdate(true)
         handleShow()
-        setisUpdated(false)
+
     }
 
     // function updateScheduleDay() {

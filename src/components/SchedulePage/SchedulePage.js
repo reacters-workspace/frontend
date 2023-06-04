@@ -27,7 +27,9 @@ export default function SchedulePage({ onSchedulePage }) {
                 const exerciseDB = result.data.data;
 
                 setScheduleCards(exerciseDB);
+                
             });
+        console.log(isUpdated)
     }
     function deleteChangeState(id) {
         setScheduleCards(beforeDelete => beforeDelete.filter(Schedulefiltered => Schedulefiltered.id !== id))
