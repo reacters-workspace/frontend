@@ -6,15 +6,15 @@
 
 - Overview: "Many people lack knowledge about fitness and health-related topics, so we build a Fitness website to provide valuable information and education on various aspects of fitness "
 
-### Technologies we used: React, Node.js, Postgres SQL, React Bootstrap, VS code.
+- Technologies we used: React, Node.js, Postgres SQL, React Bootstrap, VS code.
 
-### For Deployment, we used: Render and Netlify.
+- For Deployment, we used: Render and Netlify.
 
-### Live URL(Demo): https://lnkd.in/dZ_CiT9Z
+- Live URL(Demo): https://lnkd.in/dZ_CiT9Z
 
-### GitHub: https://lnkd.in/dcrj2D9N
+- GitHub: https://lnkd.in/dcrj2D9N
 
-### Notes: We created the project in one week, please wait a second for the API to respond .
+- Notes: We created the project in one week, please wait a second for the API to respond .
 
 ### our team that workd on this project :
 - Hasan Tommalieh
