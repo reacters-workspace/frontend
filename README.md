@@ -1,6 +1,6 @@
 # Reacter Fitness
 
-### this is the final project for the prep course ( full stack web developer ) at Abdul Aziz Al Ghurair School of Advanced Computing (ASAC) in two months.
+### This is the final project for the prep course ( full stack web developer ) at Abdul Aziz Al Ghurair School of Advanced Computing (ASAC) in two months.
 
 ## Name project: "Reacter Fitness"
 
@@ -9,13 +9,13 @@
 - For Deployment, we used: Render and Netlify.
 - Live URL(Demo): https://lnkd.in/dZ_CiT9Z
 - GitHub: https://lnkd.in/dcrj2D9N
-- Notes: We created the project in one week, please wait a second for the API to respond .
+- Notes: We created the project in one week, please wait a second for the API to respond.
 
-### our team that workd on this project :
+### Our team that worked on this project :
 - Hasan Tommalieh
 - Anas Nemrawi
-- Murad Dabbous,
-- Rama Al-momani
+- Murad Dabbous
+- Rama Al-Momani
 - Tasneem Hassasneh
 
 # Getting Started with Create React App
