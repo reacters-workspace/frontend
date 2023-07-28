@@ -1,3 +1,30 @@
+# Reacter Fitness
+
+### this is the final project for the prep course ( full stack web developer ) at Abdul Aziz Al Ghurair School of Advanced Computing (ASAC) in two months.
+
+## Name project: "Reacter Fitness"
+
+### Overview: "Many people lack knowledge about fitness and health-related topics, so we build a Fitness website to provide valuable information and education on various aspects of fitness "
+
+### Technologies we used: React, Node.js, Postgres SQL, React Bootstrap, VS code.
+
+### For Deployment, we used: Render and Netlify.
+
+### Note: The website works on PC only for now, and we're working on mobile responsiveness.
+
+### Live URL(Demo): https://lnkd.in/dZ_CiT9Z
+
+### GitHub: https://lnkd.in/dcrj2D9N
+
+### Notes: We created the project in one week, please wait a second for the API to respond .
+
+### our team that workd on this project :
+- Hasan Tommalieh
+- Anas Nemrawi
+- Murad Dabbous,
+- Rama Al-momani
+- Tasneem Hassasneh
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
