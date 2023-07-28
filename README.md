@@ -4,7 +4,7 @@
 
 ## Name project: "Reacter Fitness"
 
-### Overview: "Many people lack knowledge about fitness and health-related topics, so we build a Fitness website to provide valuable information and education on various aspects of fitness "
+- Overview: "Many people lack knowledge about fitness and health-related topics, so we build a Fitness website to provide valuable information and education on various aspects of fitness "
 
 ### Technologies we used: React, Node.js, Postgres SQL, React Bootstrap, VS code.
 
