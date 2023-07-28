@@ -10,7 +10,7 @@
 
 ### For Deployment, we used: Render and Netlify.
 
-### Note: The website works on PC only for now, and we're working on mobile responsiveness.
+### Note: The website works on PC only for now.
 
 ### Live URL(Demo): https://lnkd.in/dZ_CiT9Z
 
