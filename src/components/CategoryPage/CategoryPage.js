@@ -15,7 +15,7 @@ export default function CategoryPage() {
 
   function fetchData() {
     axios
-      .get(`https://reacters-fitness.onrender.com/get-categories-db`)
+      .get(`https://reacters-fitness2.onrender.com/get-categories-db`)
       .then((result) => {
         const categoryDB = result.data.data;
 

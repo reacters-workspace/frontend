@@ -27,7 +27,7 @@ function ModalExercise({ show, handleClose, singleExercise, onSchedulePage = fal
         exercise_target: singleExercise.target,
         week_day: comment
       }
-      axios.post(`https://reacters-fitness.onrender.com/schedule`, obj).then(res => console.log(res.data)).catch(err => { console.log(err) })
+      axios.post(`https://reacters-fitness2.onrender.com/schedule`, obj).then(res => console.log(res.data)).catch(err => { console.log(err) })
       setComment('')
     }
 
@@ -41,7 +41,7 @@ function ModalExercise({ show, handleClose, singleExercise, onSchedulePage = fal
 
     }
     if (comment !== "") {
-      axios.put(`https://reacters-fitness.onrender.com/update-schedule/${singleExercise.id}`, updatedDay).then(res => console.log(res.data)).catch(err => { console.log(err) })
+      axios.put(`https://reacters-fitness2.onrender.com/update-schedule/${singleExercise.id}`, updatedDay).then(res => console.log(res.data)).catch(err => { console.log(err) })
       // console.log(updatedDay)
       setComment('')
 

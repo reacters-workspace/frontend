@@ -11,7 +11,7 @@ function Contact() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://reacters-fitness.onrender.com/contact', {
+    fetch('https://reacters-fitness2.onrender.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
