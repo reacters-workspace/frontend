@@ -25,7 +25,7 @@ export default function ExercisePage({ withDynamic }) {
   const [exerciseData, setExerciseData] = useState([]);
   function fetchData() {
     axios
-      .get(`https://reacters-fitness.onrender.com/exercises`)
+      .get(`https://reacters-fitness2.onrender.com/exercises`)
       .then((result) => {
         const exerciseDB = result.data.results;
 
